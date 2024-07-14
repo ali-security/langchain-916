@@ -51,7 +51,7 @@ class OpenLLM(LLM):
 
     .. code-block:: bash
 
-        pip install openllm
+        pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openllm
 
     Learn more at: https://github.com/bentoml/openllm
 
@@ -134,7 +134,7 @@ class OpenLLM(LLM):
         except ImportError as e:
             raise ImportError(
                 "Could not import openllm. Make sure to install it with "
-                "'pip install openllm.'"
+                "'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openllm.'"
             ) from e
 
         llm_kwargs = llm_kwargs or {}
@@ -256,7 +256,7 @@ class OpenLLM(LLM):
         except ImportError as e:
             raise ImportError(
                 "Could not import openllm. Make sure to install it with "
-                "'pip install openllm'."
+                "'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openllm'."
             ) from e
 
         copied = copy.deepcopy(self.llm_kwargs)
@@ -282,7 +282,7 @@ class OpenLLM(LLM):
         except ImportError as e:
             raise ImportError(
                 "Could not import openllm. Make sure to install it with "
-                "'pip install openllm'."
+                "'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openllm'."
             ) from e
 
         copied = copy.deepcopy(self.llm_kwargs)

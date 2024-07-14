@@ -10,7 +10,7 @@
 You need to install a python package.
 
 ```bash
-pip install xmltodict
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' xmltodict
 ```
 
 ### Retriever

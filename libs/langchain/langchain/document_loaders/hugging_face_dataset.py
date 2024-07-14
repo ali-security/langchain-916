@@ -58,7 +58,7 @@ class HuggingFaceDatasetLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "Could not import datasets python package. "
-                "Please install it with `pip install datasets`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' datasets`."
             )
 
         dataset = load_dataset(

@@ -23,7 +23,7 @@ class DatadogLogsLoader(BaseLoader):
         """Initialize Datadog document loader.
 
         Requirements:
-            - Must have datadog_api_client installed. Install with `pip install datadog_api_client`.
+            - Must have datadog_api_client installed. Install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' datadog_api_client`.
 
         Args:
             query: The query to run in Datadog.
@@ -43,7 +43,7 @@ class DatadogLogsLoader(BaseLoader):
         except ImportError as ex:
             raise ImportError(
                 "Could not import datadog_api_client python package. "
-                "Please install it with `pip install datadog_api_client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' datadog_api_client`."
             ) from ex
 
         self.query = query
@@ -100,7 +100,7 @@ class DatadogLogsLoader(BaseLoader):
         except ImportError as ex:
             raise ImportError(
                 "Could not import datadog_api_client python package. "
-                "Please install it with `pip install datadog_api_client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' datadog_api_client`."
             ) from ex
 
         now = datetime.now()

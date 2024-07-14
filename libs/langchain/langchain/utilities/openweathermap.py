@@ -12,7 +12,7 @@ class OpenWeatherMapAPIWrapper(BaseModel):
 
     1. Go to OpenWeatherMap and sign up for an API key
     2. Save your API KEY into OPENWEATHERMAP_API_KEY env variable
-    3. pip install pyowm
+    3. pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyowm
     """
 
     owm: Any
@@ -35,7 +35,7 @@ class OpenWeatherMapAPIWrapper(BaseModel):
 
         except ImportError:
             raise ImportError(
-                "pyowm is not installed. Please install it with `pip install pyowm`"
+                "pyowm is not installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyowm`"
             )
 
         owm = pyowm.OWM(openweathermap_api_key)

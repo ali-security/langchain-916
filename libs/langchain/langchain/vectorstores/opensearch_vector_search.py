@@ -13,7 +13,7 @@ from langchain.vectorstores.base import VectorStore
 from langchain.vectorstores.utils import maximal_marginal_relevance
 
 IMPORT_OPENSEARCH_PY_ERROR = (
-    "Could not import OpenSearch. Please install it with `pip install opensearch-py`."
+    "Could not import OpenSearch. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' opensearch-py`."
 )
 SCRIPT_SCORING_SEARCH = "script_scoring"
 PAINLESS_SCRIPTING_SEARCH = "painless_scripting"

@@ -41,7 +41,7 @@ def import_langkit(
     except ImportError:
         raise ImportError(
             "To use the whylabs callback manager you need to have the `langkit` python "
-            "package installed. Please install it with `pip install langkit`."
+            "package installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' langkit`."
         )
     return langkit
 

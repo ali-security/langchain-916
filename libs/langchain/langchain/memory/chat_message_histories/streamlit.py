@@ -19,7 +19,7 @@ class StreamlitChatMessageHistory(BaseChatMessageHistory):
             import streamlit as st
         except ImportError as e:
             raise ImportError(
-                "Unable to import streamlit, please run `pip install streamlit`."
+                "Unable to import streamlit, please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' streamlit`."
             ) from e
 
         if key not in st.session_state:

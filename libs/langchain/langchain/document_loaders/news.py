@@ -20,7 +20,7 @@ class NewsURLLoader(BaseLoader):
         continue_on_failure: If True, continue loading documents even if
             loading fails for a particular URL.
         show_progress_bar: If True, use tqdm to show a loading progress bar. Requires
-            tqdm to be installed, ``pip install tqdm``.
+            tqdm to be installed, ``pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm``.
         **newspaper_kwargs: Any additional named arguments to pass to
             newspaper.Article().
 
@@ -55,7 +55,7 @@ class NewsURLLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "newspaper package not found, please install it with "
-                "`pip install newspaper3k`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' newspaper3k`"
             )
 
         self.urls = urls
@@ -73,7 +73,7 @@ class NewsURLLoader(BaseLoader):
             except ImportError as e:
                 raise ImportError(
                     "Package tqdm must be installed if show_progress_bar=True. "
-                    "Please install with 'pip install tqdm' or set "
+                    "Please install with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm' or set "
                     "show_progress_bar=False."
                 ) from e
             iter = tqdm(iter)
@@ -84,7 +84,7 @@ class NewsURLLoader(BaseLoader):
             from newspaper import Article
         except ImportError as e:
             raise ImportError(
-                "Cannot import newspaper, please install with `pip install newspaper3k`"
+                "Cannot import newspaper, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' newspaper3k`"
             ) from e
 
         for url in self.urls:

@@ -105,7 +105,7 @@ class Petals(LLM):
         except ImportError:
             raise ValueError(
                 "Could not import transformers or petals python package."
-                "Please install with `pip install -U transformers petals`."
+                "Please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -U transformers petals`."
             )
         return values
 

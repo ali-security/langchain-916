@@ -80,7 +80,7 @@ class HuggingFacePipeline(LLM):
         except ImportError:
             raise ValueError(
                 "Could not import transformers python package. "
-                "Please install it with `pip install transformers`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' transformers`."
             )
 
         _model_kwargs = model_kwargs or {}

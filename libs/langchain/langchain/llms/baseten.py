@@ -60,7 +60,7 @@ class Baseten(LLM):
         except ImportError as exc:
             raise ImportError(
                 "Could not import Baseten Python package. "
-                "Please install it with `pip install baseten`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' baseten`."
             ) from exc
 
         # get the model and version

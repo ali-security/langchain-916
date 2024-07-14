@@ -10,7 +10,7 @@ class XinferenceEmbeddings(Embeddings):
     To use, you should have the xinference library installed:
     .. code-block:: bash
 
-        pip install xinference
+        pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' xinference
 
     Check out: https://github.com/xorbitsai/inference
     To run, you need to start a Xinference supervisor on one server and Xinference workers on the other servers
@@ -64,7 +64,7 @@ class XinferenceEmbeddings(Embeddings):
         except ImportError as e:
             raise ImportError(
                 "Could not import RESTfulClient from xinference. Please install it"
-                " with `pip install xinference`."
+                " with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' xinference`."
             ) from e
 
         super().__init__()

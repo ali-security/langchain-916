@@ -119,7 +119,7 @@ class Milvus(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import pymilvus python package. "
-                "Please install it with `pip install pymilvus`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pymilvus`."
             )
 
         # Default search params when one is not provided.

@@ -25,7 +25,7 @@ def import_context() -> Any:
         raise ImportError(
             "To use the context callback manager you need to have the "
             "`getcontext` python package installed (version >=0.3.0). "
-            "Please install it with `pip install --upgrade python-context`"
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade python-context`"
         )
     return getcontext, Credential, Conversation, Message, MessageRole, Rating
 

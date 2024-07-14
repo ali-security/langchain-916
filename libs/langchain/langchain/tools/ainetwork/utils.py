@@ -16,7 +16,7 @@ def authenticate(network: Optional[Literal["mainnet", "testnet"]] = "testnet") -
     except ImportError as e:
         raise ImportError(
             "Cannot import ain-py related modules. Please install the package with "
-            "`pip install ain-py`."
+            "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' ain-py`."
         ) from e
 
     if network == "mainnet":

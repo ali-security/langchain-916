@@ -251,7 +251,7 @@ class BaseOpenAI(BaseLLM):
         except ImportError:
             raise ImportError(
                 "Could not import openai python package. "
-                "Please install it with `pip install openai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`."
             )
         if values["streaming"] and values["n"] > 1:
             raise ValueError("Cannot stream results when n > 1.")
@@ -518,7 +518,7 @@ class BaseOpenAI(BaseLLM):
             raise ImportError(
                 "Could not import tiktoken python package. "
                 "This is needed in order to calculate get_num_tokens. "
-                "Please install it with `pip install tiktoken`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tiktoken`."
             )
 
         model_name = self.tiktoken_model_name or self.model_name
@@ -774,7 +774,7 @@ class OpenAIChat(BaseLLM):
         except ImportError:
             raise ImportError(
                 "Could not import openai python package. "
-                "Please install it with `pip install openai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`."
             )
         try:
             values["client"] = openai.ChatCompletion
@@ -782,7 +782,7 @@ class OpenAIChat(BaseLLM):
             raise ValueError(
                 "`openai` has no `ChatCompletion` attribute, this is likely "
                 "due to an old version of the openai package. Try upgrading it "
-                "with `pip install --upgrade openai`."
+                "with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade openai`."
             )
         warnings.warn(
             "You are trying to use a chat model. This way of initializing it is "
@@ -937,7 +937,7 @@ class OpenAIChat(BaseLLM):
             raise ImportError(
                 "Could not import tiktoken python package. "
                 "This is needed in order to calculate get_num_tokens. "
-                "Please install it with `pip install tiktoken`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tiktoken`."
             )
 
         enc = tiktoken.encoding_for_model(self.model_name)

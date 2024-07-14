@@ -77,7 +77,7 @@ jobs:
           poetry install
 
           echo "Editably installing langchain outside of poetry, to avoid messing up lockfile..."
-          poetry run pip install -e ../langchain
+          poetry run pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -e ../langchain
 
       - name: Run tests
         run: make test

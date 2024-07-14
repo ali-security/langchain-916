@@ -5,7 +5,7 @@ Learn how to use LangChain with models deployed on Baseten.
 ## Installation and setup
 
 - Create a [Baseten](https://baseten.co) account and [API key](https://docs.baseten.co/settings/api-keys).
-- Install the Baseten Python client with `pip install baseten`
+- Install the Baseten Python client with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' baseten`
 - Use your API key to authenticate with `baseten login`
 
 ## Invoking a model

@@ -63,7 +63,7 @@ class ChatMLflowAIGateway(BaseChatModel):
         except ImportError as e:
             raise ImportError(
                 "Could not import `mlflow.gateway` module. "
-                "Please install it with `pip install mlflow[gateway]`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' mlflow[gateway]`."
             ) from e
 
         super().__init__(**kwargs)
@@ -95,7 +95,7 @@ class ChatMLflowAIGateway(BaseChatModel):
         except ImportError as e:
             raise ImportError(
                 "Could not import `mlflow.gateway` module. "
-                "Please install it with `pip install mlflow[gateway]`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' mlflow[gateway]`."
             ) from e
 
         message_dicts = [

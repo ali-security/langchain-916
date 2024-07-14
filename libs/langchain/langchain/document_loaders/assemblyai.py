@@ -64,7 +64,7 @@ class AssemblyAIAudioTranscriptLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "Could not import assemblyai python package. "
-                "Please install it with `pip install assemblyai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' assemblyai`."
             )
         if api_key is not None:
             assemblyai.settings.api_key = api_key

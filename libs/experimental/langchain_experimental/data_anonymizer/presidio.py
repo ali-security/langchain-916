@@ -36,7 +36,7 @@ class PresidioAnonymizer(AnonymizerBase):
         except ImportError as e:
             raise ImportError(
                 "Could not import presidio_analyzer, please install with "
-                "`pip install presidio-analyzer`. You will also need to download a "
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' presidio-analyzer`. You will also need to download a "
                 "spaCy model to use the analyzer, e.g. "
                 "`python -m spacy download en_core_web_lg`."
             ) from e
@@ -46,7 +46,7 @@ class PresidioAnonymizer(AnonymizerBase):
         except ImportError as e:
             raise ImportError(
                 "Could not import presidio_anonymizer, please install with "
-                "`pip install presidio-anonymizer`."
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' presidio-anonymizer`."
             ) from e
 
         self.analyzed_fields = (

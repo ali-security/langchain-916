@@ -141,7 +141,7 @@ class ElasticVectorSearch(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import elasticsearch python package. "
-                "Please install it with `pip install elasticsearch`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' elasticsearch`."
             )
         self.embedding = embedding
         self.index_name = index_name
@@ -182,7 +182,7 @@ class ElasticVectorSearch(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import elasticsearch python package. "
-                "Please install it with `pip install elasticsearch`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' elasticsearch`."
             )
         requests = []
         ids = ids or [str(uuid.uuid4()) for _ in texts]
@@ -388,7 +388,7 @@ class ElasticKnnSearch(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import elasticsearch python package. "
-                "Please install it with `pip install elasticsearch`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' elasticsearch`."
             )
 
         warnings.warn(

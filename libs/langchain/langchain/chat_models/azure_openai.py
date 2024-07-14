@@ -99,7 +99,7 @@ class AzureChatOpenAI(ChatOpenAI):
         except ImportError:
             raise ImportError(
                 "Could not import openai python package. "
-                "Please install it with `pip install openai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`."
             )
         try:
             values["client"] = openai.ChatCompletion
@@ -107,7 +107,7 @@ class AzureChatOpenAI(ChatOpenAI):
             raise ValueError(
                 "`openai` has no `ChatCompletion` attribute, this is likely "
                 "due to an old version of the openai package. Try upgrading it "
-                "with `pip install --upgrade openai`."
+                "with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade openai`."
             )
         if values["n"] < 1:
             raise ValueError("n must be at least 1.")

@@ -63,7 +63,7 @@ class UnstructuredHtmlEvaluator(PlaywrightEvaluator):
         except ImportError:
             raise ImportError(
                 "unstructured package not found, please install it with "
-                "`pip install unstructured`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' unstructured`"
             )
 
         self.remove_selectors = remove_selectors
@@ -124,7 +124,7 @@ class PlaywrightURLLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "playwright package not found, please install it with "
-                "`pip install playwright`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' playwright`"
             )
 
         self.urls = urls

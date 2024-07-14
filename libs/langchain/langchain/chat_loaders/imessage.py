@@ -41,7 +41,7 @@ class IMessageChatLoader(chat_loaders.BaseChatLoader):
         except ImportError as e:
             raise ImportError(
                 "The sqlite3 module is required to load iMessage chats.\n"
-                "Please install it with `pip install pysqlite3`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pysqlite3`"
             ) from e
 
     def _load_single_chat_session(

@@ -138,7 +138,7 @@ class SQLDatabase:
         """
         Class method to create an SQLDatabase instance from a Databricks connection.
         This method requires the 'databricks-sql-connector' package. If not installed,
-        it can be added using `pip install databricks-sql-connector`.
+        it can be added using `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' databricks-sql-connector`.
 
         Args:
             catalog (str): The catalog name in the Databricks database.
@@ -180,7 +180,7 @@ class SQLDatabase:
         except ImportError:
             raise ValueError(
                 "databricks-sql-connector package not found, please install with"
-                " `pip install databricks-sql-connector`"
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' databricks-sql-connector`"
             )
         context = None
         try:
@@ -232,7 +232,7 @@ class SQLDatabase:
         """
         Class method to create an SQLDatabase instance from a CnosDB connection.
         This method requires the 'cnos-connector' package. If not installed, it
-        can be added using `pip install cnos-connector`.
+        can be added using `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' cnos-connector`.
 
         Args:
             url (str): The HTTP connection host name and port number of the CnosDB
@@ -258,7 +258,7 @@ class SQLDatabase:
         except ImportError:
             raise ValueError(
                 "cnos-connector package not found, please install with"
-                " `pip install cnos-connector`"
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' cnos-connector`"
             )
 
     @property

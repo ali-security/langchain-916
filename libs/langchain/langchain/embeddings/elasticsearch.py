@@ -97,7 +97,7 @@ class ElasticsearchEmbeddings(Embeddings):
             from elasticsearch.client import MlClient
         except ImportError:
             raise ImportError(
-                "elasticsearch package not found, please install with 'pip install "
+                "elasticsearch package not found, please install with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "
                 "elasticsearch'"
             )
 

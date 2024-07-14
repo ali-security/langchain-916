@@ -37,7 +37,7 @@ class Tair(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import tair python package. "
-                "Please install it with `pip install tair`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tair`."
             )
         try:
             # connect to tair from url
@@ -175,7 +175,7 @@ class Tair(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import tair python package. "
-                "Please install it with `pip install tair`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tair`."
             )
         url = get_from_dict_or_env(kwargs, "tair_url", "TAIR_URL")
         if "tair_url" in kwargs:
@@ -264,7 +264,7 @@ class Tair(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import tair python package. "
-                "Please install it with `pip install tair`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tair`."
             )
         url = get_from_dict_or_env(kwargs, "tair_url", "TAIR_URL")
 

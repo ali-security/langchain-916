@@ -275,7 +275,7 @@ class OpenAIEmbeddings(BaseModel, Embeddings):
         except ImportError:
             raise ImportError(
                 "Could not import openai python package. "
-                "Please install it with `pip install openai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`."
             )
         return values
 
@@ -300,7 +300,7 @@ class OpenAIEmbeddings(BaseModel, Embeddings):
             except ImportError:
                 raise ImportError(
                     "Could not import openai python package. "
-                    "Please install it with `pip install openai`."
+                    "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`."
                 )
 
             openai.proxy = {
@@ -321,7 +321,7 @@ class OpenAIEmbeddings(BaseModel, Embeddings):
             raise ImportError(
                 "Could not import tiktoken python package. "
                 "This is needed in order to for OpenAIEmbeddings. "
-                "Please install it with `pip install tiktoken`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tiktoken`."
             )
 
         tokens = []
@@ -402,7 +402,7 @@ class OpenAIEmbeddings(BaseModel, Embeddings):
             raise ImportError(
                 "Could not import tiktoken python package. "
                 "This is needed in order to for OpenAIEmbeddings. "
-                "Please install it with `pip install tiktoken`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tiktoken`."
             )
 
         tokens = []

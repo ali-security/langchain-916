@@ -69,7 +69,7 @@ class Bagel(VectorStore):
             import bagel
             import bagel.config
         except ImportError:
-            raise ImportError("Please install bagel `pip install betabageldb`.")
+            raise ImportError("Please install bagel `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' betabageldb`.")
         if client is not None:
             self._client_settings = client_settings
             self._client = client
@@ -108,7 +108,7 @@ class Bagel(VectorStore):
         try:
             import bagel  # noqa: F401
         except ImportError:
-            raise ValueError("Please install bagel `pip install betabageldb`.")
+            raise ValueError("Please install bagel `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' betabageldb`.")
         return self._cluster.find(
             query_texts=query_texts,
             query_embeddings=query_embeddings,

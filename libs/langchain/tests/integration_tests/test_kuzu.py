@@ -18,7 +18,7 @@ class TestKuzu(unittest.TestCase):
         except ImportError as e:
             raise ImportError(
                 "Cannot import Python package kuzu. Please install it by running "
-                "`pip install kuzu`."
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' kuzu`."
             ) from e
 
         self.tmpdir = tempfile.mkdtemp()

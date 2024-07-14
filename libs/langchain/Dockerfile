@@ -13,8 +13,8 @@ ARG POETRY_HOME
 
 # Create a Python virtual environment for Poetry and install it
 RUN python3 -m venv ${POETRY_HOME} && \
-    $POETRY_HOME/bin/pip install --upgrade pip && \
-    $POETRY_HOME/bin/pip install poetry==${POETRY_VERSION}
+    $POETRY_HOME/bin/pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade pip && \
+    $POETRY_HOME/bin/pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' poetry==${POETRY_VERSION}
 
 # Test if Poetry is installed in the expected path
 RUN echo "Poetry version:" && $POETRY_HOME/bin/poetry --version

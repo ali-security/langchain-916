@@ -3,8 +3,8 @@
 Installation:
 
 ```bash
-    pip install --upgrade protobuf
-    pip install nucliadb-protos
+    pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade protobuf
+    pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' nucliadb-protos
 ```
 """
 
@@ -189,14 +189,14 @@ class NucliaUnderstandingAPI(BaseTool):
         except ImportError as e:
             raise ImportError(
                 "nucliadb-protos is not installed. "
-                "Run `pip install nucliadb-protos` to install."
+                "Run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' nucliadb-protos` to install."
             ) from e
         try:
             from google.protobuf.json_format import MessageToJson
         except ImportError as e:
             raise ImportError(
                 "Unable to import google.protobuf, please install with "
-                "`pip install protobuf`."
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' protobuf`."
             ) from e
 
         res = requests.get(

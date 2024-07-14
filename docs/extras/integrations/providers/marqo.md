@@ -13,7 +13,7 @@ Deployment of Marqo is flexible, you can get started yourself with our docker im
 To run Marqo locally with our docker image, [see our getting started.](https://docs.marqo.ai/latest/)
 
 ## Installation and Setup
-- Install the Python SDK with `pip install marqo`
+- Install the Python SDK with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' marqo`
 
 ## Wrappers
 

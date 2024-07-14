@@ -123,7 +123,7 @@ class MyScale(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import clickhouse connect python package. "
-                "Please install it with `pip install clickhouse-connect`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clickhouse-connect`."
             )
         try:
             from tqdm import tqdm

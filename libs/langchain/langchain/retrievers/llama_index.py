@@ -25,7 +25,7 @@ class LlamaIndexRetriever(BaseRetriever):
             from llama_index.response.schema import Response
         except ImportError:
             raise ImportError(
-                "You need to install `pip install llama-index` to use this retriever."
+                "You need to install `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' llama-index` to use this retriever."
             )
         index = cast(BaseGPTIndex, self.index)
 
@@ -64,7 +64,7 @@ class LlamaIndexGraphRetriever(BaseRetriever):
             from llama_index.response.schema import Response
         except ImportError:
             raise ImportError(
-                "You need to install `pip install llama-index` to use this retriever."
+                "You need to install `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' llama-index` to use this retriever."
             )
         graph = cast(ComposableGraph, self.graph)
 

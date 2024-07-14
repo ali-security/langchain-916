@@ -14,7 +14,7 @@ class LambdaWrapper(BaseModel):
     Example:
         .. code-block:: bash
 
-            pip install boto3
+            pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' boto3
 
             aws configure
 
@@ -43,7 +43,7 @@ class LambdaWrapper(BaseModel):
 
         except ImportError:
             raise ImportError(
-                "boto3 is not installed. Please install it with `pip install boto3`"
+                "boto3 is not installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' boto3`"
             )
 
         values["lambda_client"] = boto3.client("lambda")

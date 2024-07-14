@@ -97,7 +97,7 @@ class RedisEntityStore(BaseEntityStore):
         except ImportError:
             raise ImportError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             )
 
         super().__init__(*args, **kwargs)
@@ -171,7 +171,7 @@ class SQLiteEntityStore(BaseEntityStore):
         except ImportError:
             raise ImportError(
                 "Could not import sqlite3 python package. "
-                "Please install it with `pip install sqlite3`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' sqlite3`."
             )
         super().__init__(*args, **kwargs)
 

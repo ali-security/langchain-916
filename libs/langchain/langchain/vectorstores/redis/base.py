@@ -265,7 +265,7 @@ class Redis(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             ) from e
 
         self.index_name = index_name
@@ -358,7 +358,7 @@ class Redis(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             ) from e
 
         redis_url = get_from_dict_or_env(kwargs, "redis_url", "REDIS_URL")
@@ -598,7 +598,7 @@ class Redis(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             )
         try:
             # We need to first remove redis_url from kwargs,
@@ -639,7 +639,7 @@ class Redis(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             )
         try:
             # We need to first remove redis_url from kwargs,
@@ -792,7 +792,7 @@ class Redis(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             ) from e
 
         if "score_threshold" in kwargs:
@@ -872,7 +872,7 @@ class Redis(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             ) from e
 
         if "score_threshold" in kwargs:
@@ -998,7 +998,7 @@ class Redis(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             ) from e
         return_fields = return_fields or []
         vector_key = self._schema.content_vector_key
@@ -1037,7 +1037,7 @@ class Redis(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             ) from e
         return_fields = return_fields or []
         query_prefix = "*"
@@ -1111,7 +1111,7 @@ class Redis(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import redis python package. "
-                "Please install it with `pip install redis`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis`."
             )
 
         # Set vector dimension

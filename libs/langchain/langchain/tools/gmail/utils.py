@@ -28,7 +28,7 @@ def import_google() -> Tuple[Request, Credentials]:
     except ImportError:
         raise ImportError(
             "You need to install google-auth-httplib2 to use this toolkit. "
-            "Try running pip install --upgrade google-auth-httplib2"
+            "Try running pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade google-auth-httplib2"
         )
     return Request, Credentials
 
@@ -44,7 +44,7 @@ def import_installed_app_flow() -> InstalledAppFlow:
     except ImportError:
         raise ImportError(
             "You need to install google-auth-oauthlib to use this toolkit. "
-            "Try running pip install --upgrade google-auth-oauthlib"
+            "Try running pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade google-auth-oauthlib"
         )
     return InstalledAppFlow
 
@@ -60,7 +60,7 @@ def import_googleapiclient_resource_builder() -> build_resource:
     except ImportError:
         raise ImportError(
             "You need to install googleapiclient to use this toolkit. "
-            "Try running pip install --upgrade google-api-python-client"
+            "Try running pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade google-api-python-client"
         )
     return build
 

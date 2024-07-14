@@ -52,7 +52,7 @@ class UnstructuredURLLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "unstructured package not found, please install it with "
-                "`pip install unstructured`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' unstructured`"
             )
 
         self._validate_mode(mode)
@@ -115,7 +115,7 @@ class UnstructuredURLLoader(BaseLoader):
             except ImportError as e:
                 raise ImportError(
                     "Package tqdm must be installed if show_progress_bar=True. "
-                    "Please install with 'pip install tqdm' or set "
+                    "Please install with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm' or set "
                     "show_progress_bar=False."
                 ) from e
 

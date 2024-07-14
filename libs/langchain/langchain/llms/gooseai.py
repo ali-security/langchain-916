@@ -101,7 +101,7 @@ class GooseAI(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import openai python package. "
-                "Please install it with `pip install openai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`."
             )
         return values
 

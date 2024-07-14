@@ -144,7 +144,7 @@ class Tongyi(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import dashscope python package. "
-                "Please install it with `pip install dashscope`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dashscope`."
             )
         try:
             values["client"] = dashscope.Generation
@@ -152,7 +152,7 @@ class Tongyi(LLM):
             raise ValueError(
                 "`dashscope` has no `Generation` attribute, this is likely "
                 "due to an old version of the dashscope package. Try upgrading it "
-                "with `pip install --upgrade dashscope`."
+                "with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade dashscope`."
             )
 
         return values

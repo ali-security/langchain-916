@@ -68,7 +68,7 @@ class ClarifaiEmbeddings(BaseModel, Embeddings):
         except ImportError:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             )
         auth = ClarifaiAuthHelper(
             user_id=user_id,
@@ -100,7 +100,7 @@ class ClarifaiEmbeddings(BaseModel, Embeddings):
         except ImportError:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             )
 
         batch_size = 32
@@ -162,7 +162,7 @@ class ClarifaiEmbeddings(BaseModel, Embeddings):
         except ImportError:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             )
 
         post_model_outputs_request = service_pb2.PostModelOutputsRequest(

@@ -10,7 +10,7 @@ class KuzuGraph:
         except ImportError:
             raise ImportError(
                 "Could not import Kùzu python package."
-                "Please install Kùzu with `pip install kuzu`."
+                "Please install Kùzu with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' kuzu`."
             )
         self.db = db
         self.conn = kuzu.Connection(self.db)

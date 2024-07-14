@@ -65,7 +65,7 @@ class SnowflakeLoader(BaseLoader):
         except ImportError as ex:
             raise ImportError(
                 "Could not import snowflake-connector-python package. "
-                "Please install it with `pip install snowflake-connector-python`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' snowflake-connector-python`."
             ) from ex
 
         conn = snowflake.connector.connect(

@@ -61,7 +61,7 @@ class Epsilla(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import pyepsilla python package. "
-                "Please install pyepsilla package with `pip install pyepsilla`."
+                "Please install pyepsilla package with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyepsilla`."
             ) from e
 
         if not isinstance(client, pyepsilla.vectordb.Client):

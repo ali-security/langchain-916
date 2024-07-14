@@ -56,7 +56,7 @@ class AsyncHtmlLoader(BaseLoader):
                 logger.info(
                     "fake_useragent not found, using default user agent."
                     "To get a realistic header for requests, "
-                    "`pip install fake_useragent`."
+                    "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' fake_useragent`."
                 )
 
         self.session = requests.Session()
@@ -118,7 +118,7 @@ class AsyncHtmlLoader(BaseLoader):
                 *tasks, desc="Fetching pages", ascii=True, mininterval=1
             )
         except ImportError:
-            warnings.warn("For better logging of progress, `pip install tqdm`")
+            warnings.warn("For better logging of progress, `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm`")
             return await asyncio.gather(*tasks)
 
     def lazy_load(self) -> Iterator[Document]:

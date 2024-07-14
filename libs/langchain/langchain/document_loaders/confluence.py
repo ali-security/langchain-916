@@ -133,7 +133,7 @@ class ConfluenceLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "`atlassian` package not found, please run "
-                "`pip install atlassian-python-api`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' atlassian-python-api`"
             )
 
         self.base_url = url
@@ -465,7 +465,7 @@ class ConfluenceLoader(BaseLoader):
             except ImportError:
                 raise ImportError(
                     "`markdownify` package not found, please run "
-                    "`pip install markdownify`"
+                    "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' markdownify`"
                 )
         if include_comments or not keep_markdown_format:
             try:
@@ -473,7 +473,7 @@ class ConfluenceLoader(BaseLoader):
             except ImportError:
                 raise ImportError(
                     "`beautifulsoup4` package not found, please run "
-                    "`pip install beautifulsoup4`"
+                    "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' beautifulsoup4`"
                 )
         if include_attachments:
             attachment_texts = self.process_attachment(page["id"], ocr_languages)
@@ -530,7 +530,7 @@ class ConfluenceLoader(BaseLoader):
             from PIL import Image  # noqa: F401
         except ImportError:
             raise ImportError(
-                "`Pillow` package not found, " "please run `pip install Pillow`"
+                "`Pillow` package not found, " "please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' Pillow`"
             )
 
         # depending on setup you may also need to set the correct path for
@@ -575,7 +575,7 @@ class ConfluenceLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "`pytesseract` or `pdf2image` package not found, "
-                "please run `pip install pytesseract pdf2image`"
+                "please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pytesseract pdf2image`"
             )
 
         response = self.confluence.request(path=link, absolute=True)
@@ -609,7 +609,7 @@ class ConfluenceLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "`pytesseract` or `Pillow` package not found, "
-                "please run `pip install pytesseract Pillow`"
+                "please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pytesseract Pillow`"
             )
 
         response = self.confluence.request(path=link, absolute=True)
@@ -633,7 +633,7 @@ class ConfluenceLoader(BaseLoader):
             import docx2txt  # noqa: F401
         except ImportError:
             raise ImportError(
-                "`docx2txt` package not found, please run `pip install docx2txt`"
+                "`docx2txt` package not found, please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' docx2txt`"
             )
 
         response = self.confluence.request(path=link, absolute=True)
@@ -657,14 +657,14 @@ class ConfluenceLoader(BaseLoader):
             import xlrd  # noqa: F401
 
         except ImportError:
-            raise ImportError("`xlrd` package not found, please run `pip install xlrd`")
+            raise ImportError("`xlrd` package not found, please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' xlrd`")
 
         try:
             import pandas as pd
 
         except ImportError:
             raise ImportError(
-                "`pandas` package not found, please run `pip install pandas`"
+                "`pandas` package not found, please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`"
             )
 
         response = self.confluence.request(path=link, absolute=True)
@@ -713,7 +713,7 @@ class ConfluenceLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "`pytesseract`, `Pillow`, `reportlab` or `svglib` package not found, "
-                "please run `pip install pytesseract Pillow reportlab svglib`"
+                "please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pytesseract Pillow reportlab svglib`"
             )
 
         response = self.confluence.request(path=link, absolute=True)

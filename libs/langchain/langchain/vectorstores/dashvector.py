@@ -53,7 +53,7 @@ class DashVector(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import dashvector python package. "
-                "Please install it with `pip install dashvector`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dashvector`."
             )
 
         if not isinstance(collection, dashvector.Collection):
@@ -338,7 +338,7 @@ class DashVector(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import dashvector python package. "
-                "Please install it with `pip install dashvector`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dashvector`."
             )
 
         dashvector_api_key = dashvector_api_key or get_from_env(

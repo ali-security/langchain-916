@@ -35,7 +35,7 @@ class QdrantTranslator(Visitor):
             from qdrant_client.http import models as rest
         except ImportError as e:
             raise ImportError(
-                "Cannot import qdrant_client. Please install with `pip install "
+                "Cannot import qdrant_client. Please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "
                 "qdrant-client`."
             ) from e
 
@@ -52,7 +52,7 @@ class QdrantTranslator(Visitor):
             from qdrant_client.http import models as rest
         except ImportError as e:
             raise ImportError(
-                "Cannot import qdrant_client. Please install with `pip install "
+                "Cannot import qdrant_client. Please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "
                 "qdrant-client`."
             ) from e
 
@@ -72,7 +72,7 @@ class QdrantTranslator(Visitor):
             from qdrant_client.http import models as rest
         except ImportError as e:
             raise ImportError(
-                "Cannot import qdrant_client. Please install with `pip install "
+                "Cannot import qdrant_client. Please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "
                 "qdrant-client`."
             ) from e
 

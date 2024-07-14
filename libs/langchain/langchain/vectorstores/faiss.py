@@ -48,8 +48,8 @@ def dependable_faiss_import(no_avx2: Optional[bool] = None) -> Any:
     except ImportError:
         raise ImportError(
             "Could not import faiss python package. "
-            "Please install it with `pip install faiss-gpu` (for CUDA supported GPU) "
-            "or `pip install faiss-cpu` (depending on Python version)."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' faiss-gpu` (for CUDA supported GPU) "
+            "or `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' faiss-cpu` (depending on Python version)."
         )
     return faiss
 

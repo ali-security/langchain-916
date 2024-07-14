@@ -45,7 +45,7 @@ class OBSDirectoryLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "Could not import esdk-obs-python python package. "
-                "Please install it with `pip install esdk-obs-python`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' esdk-obs-python`."
             )
         if not config:
             config = dict()

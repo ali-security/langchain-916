@@ -45,7 +45,7 @@ class ImageCaptionLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "`transformers` package not found, please install with "
-                "`pip install transformers`."
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' transformers`."
             )
 
         processor = BlipProcessor.from_pretrained(self.blip_processor)
@@ -71,7 +71,7 @@ class ImageCaptionLoader(BaseLoader):
             from PIL import Image
         except ImportError:
             raise ImportError(
-                "`PIL` package not found, please install with `pip install pillow`"
+                "`PIL` package not found, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pillow`"
             )
 
         try:

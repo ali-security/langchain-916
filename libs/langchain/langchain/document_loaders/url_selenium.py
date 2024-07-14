@@ -43,7 +43,7 @@ class SeleniumURLLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "selenium package not found, please install it with "
-                "`pip install selenium`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' selenium`"
             )
 
         try:
@@ -51,7 +51,7 @@ class SeleniumURLLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "unstructured package not found, please install it with "
-                "`pip install unstructured`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' unstructured`"
             )
 
         self.urls = urls

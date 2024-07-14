@@ -112,7 +112,7 @@ class GoogleDriveLoader(BaseLoader, BaseModel):
         except ImportError:
             raise ImportError(
                 "You must run "
-                "`pip install --upgrade "
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade "
                 "google-api-python-client google-auth-httplib2 "
                 "google-auth-oauthlib` "
                 "to use the Google Drive loader."

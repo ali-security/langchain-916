@@ -27,7 +27,7 @@ class ManifestWrapper(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import manifest python package. "
-                "Please install it with `pip install manifest-ml`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' manifest-ml`."
             )
         return values
 

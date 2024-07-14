@@ -18,7 +18,7 @@ def jinja2_formatter(template: str, **kwargs: Any) -> str:
     except ImportError:
         raise ImportError(
             "jinja2 not installed, which is needed to use the jinja2_formatter. "
-            "Please install it with `pip install jinja2`."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' jinja2`."
         )
 
     return Template(template).render(**kwargs)
@@ -55,7 +55,7 @@ def _get_jinja2_variables_from_template(template: str) -> Set[str]:
     except ImportError:
         raise ImportError(
             "jinja2 not installed, which is needed to use the jinja2_formatter. "
-            "Please install it with `pip install jinja2`."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' jinja2`."
         )
     env = Environment()
     ast = env.parse(template)

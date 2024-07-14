@@ -59,7 +59,7 @@ def _make_spacy_pipeline_for_splitting(pipeline: str) -> Any:  # avoid importing
         import spacy
     except ImportError:
         raise ImportError(
-            "Spacy is not installed, please install it with `pip install spacy`."
+            "Spacy is not installed, please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' spacy`."
         )
     if pipeline == "sentencizer":
         from spacy.lang.en import English
@@ -217,7 +217,7 @@ class TextSplitter(BaseDocumentTransformer, ABC):
         except ImportError:
             raise ValueError(
                 "Could not import transformers python package. "
-                "Please install it with `pip install transformers`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' transformers`."
             )
         return cls(length_function=_huggingface_tokenizer_length, **kwargs)
 
@@ -237,7 +237,7 @@ class TextSplitter(BaseDocumentTransformer, ABC):
             raise ImportError(
                 "Could not import tiktoken python package. "
                 "This is needed in order to calculate max_tokens_for_prompt. "
-                "Please install it with `pip install tiktoken`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tiktoken`."
             )
 
         if model_name is not None:
@@ -502,7 +502,7 @@ class TokenTextSplitter(TextSplitter):
             raise ImportError(
                 "Could not import tiktoken python package. "
                 "This is needed in order to for TokenTextSplitter. "
-                "Please install it with `pip install tiktoken`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tiktoken`."
             )
 
         if model_name is not None:
@@ -550,7 +550,7 @@ class SentenceTransformersTokenTextSplitter(TextSplitter):
             raise ImportError(
                 "Could not import sentence_transformer python package. "
                 "This is needed in order to for SentenceTransformersTokenTextSplitter. "
-                "Please install it with `pip install sentence-transformers`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' sentence-transformers`."
             )
 
         self.model_name = model_name
@@ -1046,7 +1046,7 @@ class NLTKTextSplitter(TextSplitter):
             self._tokenizer = sent_tokenize
         except ImportError:
             raise ImportError(
-                "NLTK is not installed, please install it with `pip install nltk`."
+                "NLTK is not installed, please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' nltk`."
             )
         self._separator = separator
 

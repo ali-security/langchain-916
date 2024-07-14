@@ -94,7 +94,7 @@ class CerebriumAI(LLM):
         except ImportError:
             raise ValueError(
                 "Could not import cerebrium python package. "
-                "Please install it with `pip install cerebrium`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' cerebrium`."
             )
 
         params = self.model_kwargs or {}

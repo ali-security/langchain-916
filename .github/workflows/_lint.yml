@@ -110,7 +110,7 @@ jobs:
         working-directory: ${{ inputs.working-directory }}
         if: ${{ inputs.working-directory != 'libs/langchain' }}
         run: |
-          pip install -e ../langchain
+          pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -e ../langchain
 
       - name: Restore black cache
         uses: actions/cache@v3

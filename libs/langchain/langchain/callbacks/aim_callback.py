@@ -13,7 +13,7 @@ def import_aim() -> Any:
         raise ImportError(
             "To use the Aim callback manager you need to have the"
             " `aim` python package installed."
-            "Please install it with `pip install aim`"
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' aim`"
         )
     return aim
 

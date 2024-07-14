@@ -18,7 +18,7 @@ class RSSFeedLoader(BaseLoader):
         continue_on_failure: If True, continue loading documents even if
             loading fails for a particular URL.
         show_progress_bar: If True, use tqdm to show a loading progress bar. Requires
-            tqdm to be installed, ``pip install tqdm``.
+            tqdm to be installed, ``pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm``.
         **newsloader_kwargs: Any additional named arguments to pass to
             NewsURLLoader.
 
@@ -72,7 +72,7 @@ class RSSFeedLoader(BaseLoader):
             except ImportError as e:
                 raise ImportError(
                     "Package tqdm must be installed if show_progress_bar=True. "
-                    "Please install with 'pip install tqdm' or set "
+                    "Please install with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm' or set "
                     "show_progress_bar=False."
                 ) from e
             iter = tqdm(iter)
@@ -87,7 +87,7 @@ class RSSFeedLoader(BaseLoader):
         except ImportError as e:
             raise ImportError(
                 "Package listparser must be installed if the opml arg is used. "
-                "Please install with 'pip install listparser' or use the "
+                "Please install with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' listparser' or use the "
                 "urls arg instead."
             ) from e
         rss = listparser.parse(self.opml)
@@ -99,7 +99,7 @@ class RSSFeedLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "feedparser package not found, please install it with "
-                "`pip install feedparser`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' feedparser`"
             )
 
         for url in self._get_urls:

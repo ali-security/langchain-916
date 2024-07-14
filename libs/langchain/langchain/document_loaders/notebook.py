@@ -108,7 +108,7 @@ class NotebookLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "pandas is needed for Notebook Loader, "
-                "please install with `pip install pandas`"
+                "please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`"
             )
         p = Path(self.file_path)
 

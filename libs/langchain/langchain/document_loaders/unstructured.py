@@ -48,7 +48,7 @@ class UnstructuredBaseLoader(BaseLoader, ABC):
         except ImportError:
             raise ValueError(
                 "unstructured package not found, please install it with "
-                "`pip install unstructured`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' unstructured`"
             )
         _valid_modes = {"single", "elements", "paged"}
         if mode not in _valid_modes:

@@ -98,7 +98,7 @@ class ArgillaCallbackHandler(BaseCallbackHandler):
         except ImportError:
             raise ImportError(
                 "To use the Argilla callback manager you need to have the `argilla` "
-                "Python package installed. Please install it with `pip install argilla`"
+                "Python package installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' argilla`"
             )
 
         # Check whether the Argilla version is compatible
@@ -106,7 +106,7 @@ class ArgillaCallbackHandler(BaseCallbackHandler):
             raise ImportError(
                 f"The installed `argilla` version is {self.ARGILLA_VERSION} but "
                 "`ArgillaCallbackHandler` requires at least version 1.8.0. Please "
-                "upgrade `argilla` with `pip install --upgrade argilla`."
+                "upgrade `argilla` with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade argilla`."
             )
 
         # Show a warning message if Argilla will assume the default values will be used

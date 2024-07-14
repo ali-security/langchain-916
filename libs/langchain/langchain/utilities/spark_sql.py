@@ -38,7 +38,7 @@ class SparkSQL:
             from pyspark.sql import SparkSession
         except ImportError:
             raise ImportError(
-                "pyspark is not installed. Please install it with `pip install pyspark`"
+                "pyspark is not installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyspark`"
             )
 
         self._spark = (
@@ -83,7 +83,7 @@ class SparkSQL:
             from pyspark.sql import SparkSession
         except ImportError:
             raise ValueError(
-                "pyspark is not installed. Please install it with `pip install pyspark`"
+                "pyspark is not installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyspark`"
             )
 
         spark = SparkSession.builder.remote(database_uri).getOrCreate()

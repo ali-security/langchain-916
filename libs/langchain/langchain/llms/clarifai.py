@@ -75,7 +75,7 @@ class Clarifai(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             )
         auth = ClarifaiAuthHelper(
             user_id=user_id,
@@ -140,7 +140,7 @@ class Clarifai(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             )
 
         # The userDataObject is created in the overview and
@@ -198,7 +198,7 @@ class Clarifai(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             )
 
         # TODO: add caching here.

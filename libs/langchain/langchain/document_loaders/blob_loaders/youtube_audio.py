@@ -23,7 +23,7 @@ class YoutubeAudioLoader(BlobLoader):
         except ImportError:
             raise ImportError(
                 "yt_dlp package not found, please install it with "
-                "`pip install yt_dlp`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' yt_dlp`"
             )
 
         # Use yt_dlp to download audio given a YouTube url

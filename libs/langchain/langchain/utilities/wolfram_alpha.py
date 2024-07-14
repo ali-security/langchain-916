@@ -13,7 +13,7 @@ class WolframAlphaAPIWrapper(BaseModel):
     1. Go to wolfram alpha and sign up for a developer account
     2. Create an app and get your APP ID
     3. Save your APP ID into WOLFRAM_ALPHA_APPID env variable
-    4. pip install wolframalpha
+    4. pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' wolframalpha
 
     """
 
@@ -39,7 +39,7 @@ class WolframAlphaAPIWrapper(BaseModel):
         except ImportError:
             raise ImportError(
                 "wolframalpha is not installed. "
-                "Please install it with `pip install wolframalpha`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' wolframalpha`"
             )
         client = wolframalpha.Client(wolfram_alpha_appid)
         values["wolfram_client"] = client

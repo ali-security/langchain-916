@@ -33,7 +33,7 @@ def _get_token_ids_default_method(text: str) -> List[int]:
         raise ImportError(
             "Could not import transformers python package. "
             "This is needed in order to calculate get_token_ids. "
-            "Please install it with `pip install transformers`."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' transformers`."
         )
     # create a GPT-2 tokenizer instance
     tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")

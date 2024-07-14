@@ -45,7 +45,7 @@ class DataFrameLoader(BaseDataFrameLoader):
             import pandas as pd
         except ImportError as e:
             raise ImportError(
-                "Unable to import pandas, please install with `pip install pandas`."
+                "Unable to import pandas, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`."
             ) from e
 
         if not isinstance(data_frame, pd.DataFrame):

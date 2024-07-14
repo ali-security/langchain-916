@@ -13,7 +13,7 @@ class DocArrayHnswSearch(DocArrayIndex):
     """`HnswLib` storage using `DocArray` package.
 
     To use it, you should have the ``docarray`` package with version >=0.32.0 installed.
-    You can install it with `pip install "langchain[docarray]"`.
+    You can install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "langchain[docarray]"`.
     """
 
     @classmethod

@@ -75,7 +75,7 @@ class MomentoChatMessageHistory(BaseChatMessageHistory):
         except ImportError:
             raise ImportError(
                 "Could not import momento python package. "
-                "Please install it with `pip install momento`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' momento`."
             )
         if not isinstance(cache_client, CacheClient):
             raise TypeError("cache_client must be a momento.CacheClient object.")
@@ -106,7 +106,7 @@ class MomentoChatMessageHistory(BaseChatMessageHistory):
         except ImportError:
             raise ImportError(
                 "Could not import momento python package. "
-                "Please install it with `pip install momento`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' momento`."
             )
         if configuration is None:
             configuration = Configurations.Laptop.v1()

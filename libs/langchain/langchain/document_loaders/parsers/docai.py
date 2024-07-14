@@ -1,8 +1,8 @@
 """Module contains a PDF parser based on DocAI from Google Cloud.
 
 You need to install two libraries to use this parser:
-pip install google-cloud-documentai
-pip install google-cloud-documentai-toolbox
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-documentai
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-documentai-toolbox
 """
 import logging
 import time
@@ -72,7 +72,7 @@ class DocAIParser(BaseBlobParser):
             except ImportError:
                 raise ImportError(
                     "documentai package not found, please install it with"
-                    " `pip install google-cloud-documentai`"
+                    " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-documentai`"
                 )
             options = ClientOptions(
                 api_endpoint=f"{location}-documentai.googleapis.com"
@@ -149,7 +149,7 @@ class DocAIParser(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "documentai_toolbox package not found, please install it with"
-                " `pip install google-cloud-documentai-toolbox`"
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-documentai-toolbox`"
             )
         for result in results:
             output_gcs = result.parsed_path.split("/")
@@ -180,7 +180,7 @@ class DocAIParser(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "documentai package not found, please install it with"
-                " `pip install gapic-google-longrunning`"
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' gapic-google-longrunning`"
             )
 
         operations = []
@@ -221,7 +221,7 @@ class DocAIParser(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "documentai package not found, please install it with"
-                " `pip install google-cloud-documentai`"
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-documentai`"
             )
 
         if not self._processor_name:
@@ -274,7 +274,7 @@ class DocAIParser(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "documentai package not found, please install it with"
-                " `pip install google-cloud-documentai`"
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-documentai`"
             )
 
         results = []

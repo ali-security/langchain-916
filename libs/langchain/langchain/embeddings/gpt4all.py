@@ -31,7 +31,7 @@ class GPT4AllEmbeddings(BaseModel, Embeddings):
             raise ImportError(
                 "Could not import gpt4all library. "
                 "Please install the gpt4all library to "
-                "use this embedding model: pip install gpt4all"
+                "use this embedding model: pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' gpt4all"
             )
         return values
 

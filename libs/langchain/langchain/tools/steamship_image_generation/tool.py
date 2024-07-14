@@ -77,7 +77,7 @@ class SteamshipImageGenerationTool(BaseTool):
         except ImportError:
             raise ImportError(
                 "steamship is not installed. "
-                "Please install it with `pip install steamship`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' steamship`"
             )
 
         steamship = Steamship(

@@ -26,7 +26,7 @@ class AzureBlobStorageFileLoader(BaseLoader):
         except ImportError as exc:
             raise ImportError(
                 "Could not import azure storage blob python package. "
-                "Please install it with `pip install azure-storage-blob`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' azure-storage-blob`."
             ) from exc
 
         client = BlobClient.from_connection_string(

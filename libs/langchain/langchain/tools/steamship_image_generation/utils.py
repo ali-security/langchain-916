@@ -17,7 +17,7 @@ def make_image_public(client: Steamship, block: Block) -> str:
         raise ImportError(
             "The make_image_public function requires the steamship"
             " package to be installed. Please install steamship"
-            " with `pip install --upgrade steamship`"
+            " with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade steamship`"
         )
 
     filepath = str(uuid.uuid4())

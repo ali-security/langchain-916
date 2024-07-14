@@ -44,7 +44,7 @@ class JSONLoader(BaseLoader):
             import jq  # noqa:F401
         except ImportError:
             raise ImportError(
-                "jq package not found, please install it with `pip install jq`"
+                "jq package not found, please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' jq`"
             )
 
         self.file_path = Path(file_path).resolve()

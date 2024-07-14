@@ -10,7 +10,7 @@ def import_spacy() -> Any:
     except ImportError:
         raise ImportError(
             "This callback manager requires the `spacy` python "
-            "package installed. Please install it with `pip install spacy`"
+            "package installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' spacy`"
         )
     return spacy
 
@@ -22,7 +22,7 @@ def import_pandas() -> Any:
     except ImportError:
         raise ImportError(
             "This callback manager requires the `pandas` python "
-            "package installed. Please install it with `pip install pandas`"
+            "package installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`"
         )
     return pandas
 
@@ -34,7 +34,7 @@ def import_textstat() -> Any:
     except ImportError:
         raise ImportError(
             "This callback manager requires the `textstat` python "
-            "package installed. Please install it with `pip install textstat`"
+            "package installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' textstat`"
         )
     return textstat
 

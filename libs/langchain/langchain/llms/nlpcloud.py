@@ -74,7 +74,7 @@ class NLPCloud(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import nlpcloud python package. "
-                "Please install it with `pip install nlpcloud`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' nlpcloud`."
             )
         return values
 

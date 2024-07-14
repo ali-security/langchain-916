@@ -12,7 +12,7 @@ class MsWordParser(BaseBlobParser):
             from unstructured.partition.docx import partition_docx
         except ImportError as e:
             raise ImportError(
-                "Could not import unstructured, please install with `pip install "
+                "Could not import unstructured, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "
                 "unstructured`."
             ) from e
 

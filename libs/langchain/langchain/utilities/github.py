@@ -53,7 +53,7 @@ class GitHubAPIWrapper(BaseModel):
         except ImportError:
             raise ImportError(
                 "PyGithub is not installed. "
-                "Please install it with `pip install PyGithub`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' PyGithub`"
             )
 
         with open(github_app_private_key, "r") as f:

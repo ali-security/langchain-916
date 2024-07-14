@@ -535,7 +535,7 @@ class ElasticsearchStore(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import elasticsearch python package. "
-                "Please install it with `pip install elasticsearch`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' elasticsearch`."
             )
 
         if es_url and cloud_id:
@@ -719,7 +719,7 @@ class ElasticsearchStore(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import elasticsearch python package. "
-                "Please install it with `pip install elasticsearch`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' elasticsearch`."
             )
 
         body = []
@@ -812,7 +812,7 @@ class ElasticsearchStore(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import elasticsearch python package. "
-                "Please install it with `pip install elasticsearch`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' elasticsearch`."
             )
 
         embeddings = []

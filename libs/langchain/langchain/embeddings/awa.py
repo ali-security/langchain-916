@@ -25,7 +25,7 @@ class AwaEmbeddings(BaseModel, Embeddings):
         except ImportError as exc:
             raise ImportError(
                 "Could not import awadb library. "
-                "Please install it with `pip install awadb`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' awadb`"
             ) from exc
         values["client"] = AwaEmbedding()
         return values

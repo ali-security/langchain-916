@@ -31,7 +31,7 @@ class ModelScopeEmbeddings(BaseModel, Embeddings):
         except ImportError as e:
             raise ImportError(
                 "Could not import some python packages."
-                "Please install it with `pip install modelscope`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' modelscope`."
             ) from e
         self.embed = pipeline(
             Tasks.sentence_embedding,

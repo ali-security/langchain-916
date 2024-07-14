@@ -48,7 +48,7 @@ class BibtexparserWrapper(BaseModel):
         except ImportError:
             raise ImportError(
                 "Could not import bibtexparser python package. "
-                "Please install it with `pip install bibtexparser`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bibtexparser`."
             )
 
         return values

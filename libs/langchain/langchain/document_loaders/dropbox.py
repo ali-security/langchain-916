@@ -3,7 +3,7 @@
 # 2. Give the app these scope permissions: `files.metadata.read`
 #    and `files.content.read`.
 # 3. Generate access token: https://www.dropbox.com/developers/apps/create.
-# 4. `pip install dropbox` (requires `pip install unstructured` for PDF filetype).
+# 4. `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dropbox` (requires `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' unstructured` for PDF filetype).
 
 
 import os
@@ -52,7 +52,7 @@ class DropboxLoader(BaseLoader, BaseModel):
         try:
             from dropbox import Dropbox, exceptions
         except ImportError:
-            raise ImportError("You must run " "`pip install dropbox")
+            raise ImportError("You must run " "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dropbox")
 
         try:
             dbx = Dropbox(self.dropbox_access_token)
@@ -71,7 +71,7 @@ class DropboxLoader(BaseLoader, BaseModel):
             from dropbox import exceptions
             from dropbox.files import FileMetadata
         except ImportError:
-            raise ImportError("You must run " "`pip install dropbox")
+            raise ImportError("You must run " "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dropbox")
 
         try:
             results = dbx.files_list_folder(folder_path, recursive=self.recursive)
@@ -96,7 +96,7 @@ class DropboxLoader(BaseLoader, BaseModel):
         try:
             from dropbox import exceptions
         except ImportError:
-            raise ImportError("You must run " "`pip install dropbox")
+            raise ImportError("You must run " "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dropbox")
 
         try:
             file_metadata = dbx.files_get_metadata(file_path)

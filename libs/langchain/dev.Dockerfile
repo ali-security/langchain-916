@@ -16,8 +16,8 @@ ENV POETRY_VIRTUALENVS_IN_PROJECT=false \
 
 # Create a Python virtual environment for Poetry and install it
 RUN python3 -m venv ${PYTHON_VIRTUALENV_HOME} && \
-    $PYTHON_VIRTUALENV_HOME/bin/pip install --upgrade pip && \
-    $PYTHON_VIRTUALENV_HOME/bin/pip install poetry==${POETRY_VERSION}
+    $PYTHON_VIRTUALENV_HOME/bin/pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade pip && \
+    $PYTHON_VIRTUALENV_HOME/bin/pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' poetry==${POETRY_VERSION}
 
 ENV PATH="$PYTHON_VIRTUALENV_HOME/bin:$PATH" \
     VIRTUAL_ENV=$PYTHON_VIRTUALENV_HOME

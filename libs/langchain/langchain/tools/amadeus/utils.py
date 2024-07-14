@@ -18,7 +18,7 @@ def authenticate() -> Client:
     except ImportError as e:
         raise ImportError(
             "Cannot import amadeus. Please install the package with "
-            "`pip install amadeus`."
+            "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' amadeus`."
         ) from e
 
     if "AMADEUS_CLIENT_ID" in os.environ and "AMADEUS_CLIENT_SECRET" in os.environ:

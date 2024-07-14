@@ -11,7 +11,7 @@
 ## Installation and Setup
 
 ```bash
-pip install pyairtable
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyairtable
 ```
 
 * Get your [API key](https://support.airtable.com/docs/creating-and-using-api-keys-and-access-tokens).

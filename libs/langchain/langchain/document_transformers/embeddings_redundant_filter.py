@@ -85,7 +85,7 @@ def _filter_cluster_embeddings(
     except ImportError:
         raise ImportError(
             "sklearn package not found, please install it with "
-            "`pip install scikit-learn`"
+            "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' scikit-learn`"
         )
 
     kmeans = KMeans(n_clusters=num_clusters, random_state=random_state).fit(

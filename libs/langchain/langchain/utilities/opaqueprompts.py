@@ -35,7 +35,7 @@ def sanitize(
     except ImportError:
         raise ImportError(
             "Could not import the `opaqueprompts` Python package, "
-            "please install it with `pip install opaqueprompts`."
+            "please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' opaqueprompts`."
         )
 
     if isinstance(input, str):
@@ -89,7 +89,7 @@ def desanitize(sanitized_text: str, secure_context: bytes) -> str:
     except ImportError:
         raise ImportError(
             "Could not import the `opaqueprompts` Python package, "
-            "please install it with `pip install opaqueprompts`."
+            "please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' opaqueprompts`."
         )
     desanitize_response: op.DesanitizeResponse = op.desanitize(
         sanitized_text, secure_context

@@ -34,7 +34,7 @@ class Predibase(LLM):
         except ImportError as e:
             raise ImportError(
                 "Could not import Predibase Python package. "
-                "Please install it with `pip install predibase`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' predibase`."
             ) from e
         except ValueError as e:
             raise ValueError("Your API key is not correct. Please try again") from e

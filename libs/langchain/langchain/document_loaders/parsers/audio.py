@@ -26,13 +26,13 @@ class OpenAIWhisperParser(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "openai package not found, please install it with "
-                "`pip install openai`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`"
             )
         try:
             from pydub import AudioSegment
         except ImportError:
             raise ImportError(
-                "pydub package not found, please install it with " "`pip install pydub`"
+                "pydub package not found, please install it with " "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pydub`"
             )
 
         # Set the API key if provided
@@ -121,13 +121,13 @@ class OpenAIWhisperParserLocal(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "transformers package not found, please install it with "
-                "`pip install transformers`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' transformers`"
             )
         try:
             import torch
         except ImportError:
             raise ImportError(
-                "torch package not found, please install it with " "`pip install torch`"
+                "torch package not found, please install it with " "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' torch`"
             )
 
         # set device, cpu by default check if there is a GPU available
@@ -192,7 +192,7 @@ class OpenAIWhisperParserLocal(BaseBlobParser):
             from pydub import AudioSegment
         except ImportError:
             raise ImportError(
-                "pydub package not found, please install it with `pip install pydub`"
+                "pydub package not found, please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pydub`"
             )
 
         try:
@@ -200,7 +200,7 @@ class OpenAIWhisperParserLocal(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "librosa package not found, please install it with "
-                "`pip install librosa`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' librosa`"
             )
 
         # Audio file from disk

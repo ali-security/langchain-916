@@ -447,7 +447,7 @@ class WandbTracer(BaseTracer):
         except ImportError as e:
             raise ImportError(
                 "Could not import wandb python package."
-                "Please install it with `pip install -U wandb`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -U wandb`."
             ) from e
         self._wandb = wandb
         self._trace_tree = trace_tree

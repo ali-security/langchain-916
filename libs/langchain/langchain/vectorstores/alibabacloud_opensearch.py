@@ -104,7 +104,7 @@ class AlibabaCloudOpenSearch(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import alibaba cloud opensearch python package. "
-                "Please install it with `pip install alibabacloud-ha3engine`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' alibabacloud-ha3engine`."
             )
 
         self.config = config

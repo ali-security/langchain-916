@@ -80,7 +80,7 @@ class DoctranPropertyExtractor(BaseDocumentTransformer):
             )
         except ImportError:
             raise ImportError(
-                "Install doctran to use this parser. (pip install doctran)"
+                "Install doctran to use this parser. (pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' doctran)"
             )
         properties = [ExtractProperty(**property) for property in self.properties]
         for d in documents:

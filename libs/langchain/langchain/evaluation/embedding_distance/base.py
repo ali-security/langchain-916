@@ -67,7 +67,7 @@ class _EmbeddingDistanceChainMixin(Chain):
                     "The tiktoken library is required to use the default "
                     "OpenAI embeddings with embedding distance evaluators."
                     " Please either manually select a different Embeddings object"
-                    " or install tiktoken using `pip install tiktoken`."
+                    " or install tiktoken using `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tiktoken`."
                 )
         return values
 

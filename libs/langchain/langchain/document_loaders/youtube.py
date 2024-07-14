@@ -68,7 +68,7 @@ class GoogleApiClient:
         except ImportError:
             raise ImportError(
                 "You must run"
-                "`pip install --upgrade "
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade "
                 "google-api-python-client google-auth-httplib2 "
                 "google-auth-oauthlib "
                 "youtube-transcript-api` "
@@ -187,7 +187,7 @@ class YoutubeLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "Could not import youtube_transcript_api python package. "
-                "Please install it with `pip install youtube-transcript-api`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' youtube-transcript-api`."
             )
 
         metadata = {"source": self.video_id}
@@ -232,7 +232,7 @@ class YoutubeLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "Could not import pytube python package. "
-                "Please install it with `pip install pytube`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pytube`."
             )
         yt = YouTube(f"https://www.youtube.com/watch?v={self.video_id}")
         video_info = {
@@ -296,7 +296,7 @@ class GoogleApiYoutubeLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "You must run"
-                "`pip install --upgrade "
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade "
                 "google-api-python-client google-auth-httplib2 "
                 "google-auth-oauthlib "
                 "youtube-transcript-api` "
@@ -363,7 +363,7 @@ class GoogleApiYoutubeLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "You must run"
-                "`pip install --upgrade "
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade "
                 "youtube-transcript-api` "
                 "to use the youtube loader"
             )

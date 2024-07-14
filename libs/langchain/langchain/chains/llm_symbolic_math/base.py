@@ -57,7 +57,7 @@ class LLMSymbolicMathChain(Chain):
             import sympy
         except ImportError as e:
             raise ImportError(
-                "Unable to import sympy, please install it with `pip install sympy`."
+                "Unable to import sympy, please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' sympy`."
             ) from e
         try:
             output = str(sympy.sympify(expression, evaluate=True))

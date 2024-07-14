@@ -17,7 +17,7 @@ def _make_iterator(
         except ImportError:
             raise ImportError(
                 "You must install tqdm to use show_progress=True."
-                "You can install tqdm with `pip install tqdm`."
+                "You can install tqdm with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm`."
             )
 
         # Make sure to provide `total` here so that tqdm can show

@@ -37,7 +37,7 @@ class Marqo(VectorStore):
     in its similarity search methods.
 
     To use, you should have the `marqo` python package installed, you can do this with
-    `pip install marqo`.
+    `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' marqo`.
 
     Example:
         .. code-block:: python
@@ -63,7 +63,7 @@ class Marqo(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import marqo python package. "
-                "Please install it with `pip install marqo`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' marqo`."
             )
         if not isinstance(client, marqo.Client):
             raise ValueError(
@@ -426,7 +426,7 @@ class Marqo(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import marqo python package. "
-                "Please install it with `pip install marqo`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' marqo`."
             )
 
         if not index_name:

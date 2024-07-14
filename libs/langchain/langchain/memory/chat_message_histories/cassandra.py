@@ -43,7 +43,7 @@ class CassandraChatMessageHistory(BaseChatMessageHistory):
         except (ImportError, ModuleNotFoundError):
             raise ImportError(
                 "Could not import cassio python package. "
-                "Please install it with `pip install cassio`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' cassio`."
             )
         self.session_id = session_id
         self.ttl_seconds = ttl_seconds

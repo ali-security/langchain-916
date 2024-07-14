@@ -76,7 +76,7 @@ class TestResult(dict):
         except ImportError as e:
             raise ImportError(
                 "Pandas is required to convert the results to a dataframe."
-                " to install pandas, run `pip install pandas`."
+                " to install pandas, run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`."
             ) from e
 
         indices = []

@@ -58,7 +58,7 @@ class HuggingFaceEmbeddings(BaseModel, Embeddings):
         except ImportError as exc:
             raise ImportError(
                 "Could not import sentence_transformers python package. "
-                "Please install it with `pip install sentence_transformers`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' sentence_transformers`."
             ) from exc
 
         self.client = sentence_transformers.SentenceTransformer(
@@ -225,7 +225,7 @@ class HuggingFaceBgeEmbeddings(BaseModel, Embeddings):
         except ImportError as exc:
             raise ImportError(
                 "Could not import sentence_transformers python package. "
-                "Please install it with `pip install sentence_transformers`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' sentence_transformers`."
             ) from exc
 
         self.client = sentence_transformers.SentenceTransformer(

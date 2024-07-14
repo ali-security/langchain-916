@@ -13,7 +13,7 @@ def import_infino() -> Any:
         raise ImportError(
             "To use the Infino callbacks manager you need to have the"
             " `infinopy` python package installed."
-            "Please install it with `pip install infinopy`"
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' infinopy`"
         )
     return InfinoClient()
 

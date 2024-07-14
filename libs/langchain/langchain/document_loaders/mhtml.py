@@ -33,7 +33,7 @@ class MHTMLLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "beautifulsoup4 package not found, please install it with "
-                "`pip install beautifulsoup4`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' beautifulsoup4`"
             )
 
         self.file_path = file_path

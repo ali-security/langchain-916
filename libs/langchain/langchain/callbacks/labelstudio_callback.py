@@ -118,7 +118,7 @@ class LabelStudioCallbackHandler(BaseCallbackHandler):
                 f"You're using {self.__class__.__name__} in your code,"
                 f" but you don't have the LabelStudio SDK "
                 f"Python package installed or upgraded to the latest version. "
-                f"Please run `pip install -U label-studio-sdk`"
+                f"Please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -U label-studio-sdk`"
                 f" before using this callback."
             )
 

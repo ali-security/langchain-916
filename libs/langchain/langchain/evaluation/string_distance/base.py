@@ -29,7 +29,7 @@ def _load_rapidfuzz() -> Any:
     except ImportError:
         raise ImportError(
             "Please install the rapidfuzz library to use the FuzzyMatchStringEvaluator."
-            "Please install it with `pip install rapidfuzz`."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' rapidfuzz`."
         )
     return rapidfuzz.distance
 

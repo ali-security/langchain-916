@@ -15,7 +15,7 @@ def raise_vertex_import_error(minimum_expected_version: str = "1.26.1") -> None:
     """
     raise ImportError(
         "Could not import VertexAI. Please, install it with "
-        f"pip install google-cloud-aiplatform>={minimum_expected_version}"
+        f"pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-aiplatform>={minimum_expected_version}"
     )
 
 

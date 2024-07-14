@@ -135,7 +135,7 @@ class DirectoryLoader(BaseLoader):
             except ImportError as e:
                 logger.warning(
                     "To log the progress of DirectoryLoader you need to install tqdm, "
-                    "`pip install tqdm`"
+                    "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm`"
                 )
                 if self.silent_errors:
                     logger.warning(e)
@@ -143,7 +143,7 @@ class DirectoryLoader(BaseLoader):
                     raise ImportError(
                         "To log the progress of DirectoryLoader "
                         "you need to install tqdm, "
-                        "`pip install tqdm`"
+                        "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tqdm`"
                     )
 
         if self.use_multithreading:

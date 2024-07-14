@@ -31,8 +31,8 @@ def import_flytekit() -> Tuple[flytekit, renderer]:
         raise ImportError(
             "To use the flyte callback manager you need"
             "to have the `flytekit` and `flytekitplugins-deck-standard`"
-            "packages installed. Please install them with `pip install flytekit`"
-            "and `pip install flytekitplugins-deck-standard`."
+            "packages installed. Please install them with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' flytekit`"
+            "and `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' flytekitplugins-deck-standard`."
         )
     return flytekit, renderer
 

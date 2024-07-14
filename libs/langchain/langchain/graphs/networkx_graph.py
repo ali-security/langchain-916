@@ -56,7 +56,7 @@ class NetworkxEntityGraph:
         except ImportError:
             raise ImportError(
                 "Could not import networkx python package. "
-                "Please install it with `pip install networkx`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' networkx`."
             )
         if graph is not None:
             if not isinstance(graph, nx.DiGraph):
@@ -72,7 +72,7 @@ class NetworkxEntityGraph:
         except ImportError:
             raise ImportError(
                 "Could not import networkx python package. "
-                "Please install it with `pip install networkx`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' networkx`."
             )
         graph = nx.read_gml(gml_path)
         return cls(graph)
@@ -160,7 +160,7 @@ class NetworkxEntityGraph:
                 raise ImportError(
                     "Could not import pygraphviz python package. "
                     "Please install it with:"
-                    "`pip install pygraphviz`."
+                    "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pygraphviz`."
                 )
 
         graph = to_agraph(self._graph)  # --> pygraphviz.agraph.AGraph

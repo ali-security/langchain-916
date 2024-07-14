@@ -99,7 +99,7 @@ class VespaRetriever(BaseRetriever):
             from vespa.application import Vespa
         except ImportError:
             raise ImportError(
-                "pyvespa is not installed, please install with `pip install pyvespa`"
+                "pyvespa is not installed, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyvespa`"
             )
         app = Vespa(url)
         body = kwargs.copy()

@@ -45,7 +45,7 @@ def _create_weaviate_client(**kwargs: Any) -> Any:
     except ImportError:
         raise ImportError(
             "Could not import weaviate python  package. "
-            "Please install it with `pip install weaviate-client`"
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' weaviate-client`"
         )
 
     auth = (
@@ -101,7 +101,7 @@ class Weaviate(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import weaviate python package. "
-                "Please install it with `pip install weaviate-client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' weaviate-client`."
             )
         if not isinstance(client, weaviate.Client):
             raise ValueError(

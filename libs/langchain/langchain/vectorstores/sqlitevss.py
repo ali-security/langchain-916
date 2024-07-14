@@ -43,7 +43,7 @@ class SQLiteVSS(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import sqlite-vss python package. "
-                "Please install it with `pip install sqlite-vss`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' sqlite-vss`."
             )
 
         if not connection:

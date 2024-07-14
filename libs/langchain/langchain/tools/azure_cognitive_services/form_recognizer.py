@@ -54,7 +54,7 @@ class AzureCogsFormRecognizerTool(BaseTool):
         except ImportError:
             raise ImportError(
                 "azure-ai-formrecognizer is not installed. "
-                "Run `pip install azure-ai-formrecognizer` to install."
+                "Run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' azure-ai-formrecognizer` to install."
             )
 
         return values

@@ -32,7 +32,7 @@ def _lazy_load_arthur() -> arthurai:
         raise ImportError(
             "To use the ArthurCallbackHandler you need the"
             " `arthurai` package. Please install it with"
-            " `pip install arthurai`.",
+            " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' arthurai`.",
             e,
         )
 
@@ -165,7 +165,7 @@ class ArthurCallbackHandler(BaseCallbackHandler):
             import pytz  # type: ignore[import]
         except ImportError as e:
             raise ImportError(
-                "Could not import pytz. Please install it with 'pip install pytz'."
+                "Could not import pytz. Please install it with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pytz'."
             ) from e
 
         run_id = kwargs["run_id"]

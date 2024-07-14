@@ -236,7 +236,7 @@ class TelegramChatApiLoader(BaseLoader):
             except ImportError:
                 raise ImportError(
                     """`nest_asyncio` package not found.
-                    please install with `pip install nest_asyncio`
+                    please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' nest_asyncio`
                     """
                 )
 
@@ -249,7 +249,7 @@ class TelegramChatApiLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 """`pandas` package not found. 
-                please install with `pip install pandas`
+                please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`
                 """
             )
         normalized_messages = pd.json_normalize(d)

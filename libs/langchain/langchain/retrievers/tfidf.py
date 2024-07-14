@@ -41,7 +41,7 @@ class TFIDFRetriever(BaseRetriever):
             from sklearn.feature_extraction.text import TfidfVectorizer
         except ImportError:
             raise ImportError(
-                "Could not import scikit-learn, please install with `pip install "
+                "Could not import scikit-learn, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "
                 "scikit-learn`."
             )
 
@@ -88,7 +88,7 @@ class TFIDFRetriever(BaseRetriever):
             import joblib
         except ImportError:
             raise ImportError(
-                "Could not import joblib, please install with `pip install joblib`."
+                "Could not import joblib, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' joblib`."
             )
 
         path = Path(folder_path)
@@ -111,7 +111,7 @@ class TFIDFRetriever(BaseRetriever):
             import joblib
         except ImportError:
             raise ImportError(
-                "Could not import joblib, please install with `pip install joblib`."
+                "Could not import joblib, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' joblib`."
             )
 
         path = Path(folder_path)

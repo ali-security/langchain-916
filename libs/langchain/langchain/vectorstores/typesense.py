@@ -62,7 +62,7 @@ class Typesense(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import typesense python package. "
-                "Please install it with `pip install typesense`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' typesense`."
             )
         if not isinstance(typesense_client, Client):
             raise ValueError(
@@ -229,7 +229,7 @@ class Typesense(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import typesense python package. "
-                "Please install it with `pip install typesense`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' typesense`."
             )
 
         node = {

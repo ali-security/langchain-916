@@ -16,7 +16,7 @@ def create_csv_agent(
         import pandas as pd
     except ImportError:
         raise ImportError(
-            "pandas package not found, please install with `pip install pandas`"
+            "pandas package not found, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`"
         )
 
     _kwargs = pandas_kwargs or {}

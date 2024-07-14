@@ -104,7 +104,7 @@ class RWKV(LLM, BaseModel):
         except ImportError:
             raise ImportError(
                 "Could not import tokenizers python package. "
-                "Please install it with `pip install tokenizers`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tokenizers`."
             )
         try:
             from rwkv.model import RWKV as RWKVMODEL
@@ -123,7 +123,7 @@ class RWKV(LLM, BaseModel):
         except ImportError:
             raise ValueError(
                 "Could not import rwkv python package. "
-                "Please install it with `pip install rwkv`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' rwkv`."
             )
         return values
 

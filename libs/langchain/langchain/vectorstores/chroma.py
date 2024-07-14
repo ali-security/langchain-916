@@ -82,7 +82,7 @@ class Chroma(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import chromadb python package. "
-                "Please install it with `pip install chromadb`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' chromadb`."
             )
 
         if client is not None:
@@ -150,7 +150,7 @@ class Chroma(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import chromadb python package. "
-                "Please install it with `pip install chromadb`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' chromadb`."
             )
         return self._collection.query(
             query_texts=query_texts,

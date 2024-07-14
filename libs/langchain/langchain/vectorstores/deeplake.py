@@ -132,7 +132,7 @@ class DeepLake(VectorStore):
         if _DEEPLAKE_INSTALLED is False:
             raise ImportError(
                 "Could not import deeplake python package. "
-                "Please install it with `pip install deeplake[enterprise]`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' deeplake[enterprise]`."
             )
 
         if (
@@ -821,7 +821,7 @@ class DeepLake(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import deeplake python package. "
-                "Please install it with `pip install deeplake`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' deeplake`."
             )
         deeplake.delete(path, large_ok=True, force=True)
 

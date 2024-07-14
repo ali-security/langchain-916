@@ -93,7 +93,7 @@ class Banana(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import banana-dev python package. "
-                "Please install it with `pip install banana-dev`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' banana-dev`."
             )
         params = self.model_kwargs or {}
         params = {**params, **kwargs}

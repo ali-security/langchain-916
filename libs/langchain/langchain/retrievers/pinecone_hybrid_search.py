@@ -141,7 +141,7 @@ class PineconeHybridSearchRetriever(BaseRetriever):
         except ImportError:
             raise ValueError(
                 "Could not import pinecone_text python package. "
-                "Please install it with `pip install pinecone_text`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pinecone_text`."
             )
         return values
 

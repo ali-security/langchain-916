@@ -49,7 +49,7 @@ class SingleStoreDB(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import singlestoredb python package. "
-                "Please install it with `pip install singlestoredb`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' singlestoredb`."
             )
         return s2.connect(**self.connection_kwargs)
 

@@ -22,7 +22,7 @@ class Html2TextTransformer(BaseDocumentTransformer):
         except ImportError:
             raise ImportError(
                 """html2text package not found, please 
-                install it with `pip install html2text`"""
+                install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' html2text`"""
             )
 
         # Create an html2text.HTML2Text object and override some properties

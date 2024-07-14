@@ -10,7 +10,7 @@ class XorbitsLoader(BaseDataFrameLoader):
         """Initialize with dataframe object.
 
         Requirements:
-            Must have xorbits installed. You can install with `pip install xorbits`.
+            Must have xorbits installed. You can install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' xorbits`.
 
         Args:
             data_frame: Xorbits DataFrame object.
@@ -21,7 +21,7 @@ class XorbitsLoader(BaseDataFrameLoader):
             import xorbits.pandas as pd
         except ImportError as e:
             raise ImportError(
-                "Cannot import xorbits, please install with 'pip install xorbits'."
+                "Cannot import xorbits, please install with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' xorbits'."
             ) from e
 
         if not isinstance(data_frame, pd.DataFrame):

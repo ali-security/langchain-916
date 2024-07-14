@@ -81,7 +81,7 @@ class TrelloLoader(BaseLoader):
         except ImportError as ex:
             raise ImportError(
                 "Could not import trello python package. "
-                "Please install it with `pip install py-trello`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' py-trello`."
             ) from ex
         api_key = api_key or get_from_env("api_key", "TRELLO_API_KEY")
         token = token or get_from_env("token", "TRELLO_TOKEN")
@@ -102,7 +102,7 @@ class TrelloLoader(BaseLoader):
         except ImportError as ex:
             raise ImportError(
                 "`beautifulsoup4` package not found, please run"
-                " `pip install beautifulsoup4`"
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' beautifulsoup4`"
             ) from ex
 
         board = self._get_board()

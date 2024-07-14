@@ -105,7 +105,7 @@ class ElasticSearchBM25Retriever(BaseRetriever):
         except ImportError:
             raise ValueError(
                 "Could not import elasticsearch python package. "
-                "Please install it with `pip install elasticsearch`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' elasticsearch`."
             )
         requests = []
         ids = []

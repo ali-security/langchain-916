@@ -50,7 +50,7 @@ class AzureCogsText2SpeechTool(BaseTool):
         except ImportError:
             raise ImportError(
                 "azure-cognitiveservices-speech is not installed. "
-                "Run `pip install azure-cognitiveservices-speech` to install."
+                "Run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' azure-cognitiveservices-speech` to install."
             )
 
         return values

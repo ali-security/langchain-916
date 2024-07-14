@@ -31,14 +31,14 @@ class TensorflowHubEmbeddings(BaseModel, Embeddings):
         except ImportError:
             raise ImportError(
                 "Could not import tensorflow-hub python package. "
-                "Please install it with `pip install tensorflow-hub``."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tensorflow-hub``."
             )
         try:
             import tensorflow_text  # noqa
         except ImportError:
             raise ImportError(
                 "Could not import tensorflow_text python package. "
-                "Please install it with `pip install tensorflow_text``."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tensorflow_text``."
             )
 
         self.embed = tensorflow_hub.load(self.model_url)

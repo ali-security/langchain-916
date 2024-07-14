@@ -98,7 +98,7 @@ class BlackboardLoader(WebBaseLoader):
         except ImportError:
             raise ImportError(
                 "BeautifulSoup4 is required for BlackboardLoader. "
-                "Please install it with `pip install beautifulsoup4`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' beautifulsoup4`."
             )
 
     def load(self) -> List[Document]:

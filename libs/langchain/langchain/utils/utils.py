@@ -87,7 +87,7 @@ def guard_import(
     except ImportError:
         raise ImportError(
             f"Could not import {module_name} python package. "
-            f"Please install it with `pip install {pip_name or module_name}`."
+            f"Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' {pip_name or module_name}`."
         )
     return module
 

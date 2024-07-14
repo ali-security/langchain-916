@@ -40,7 +40,7 @@ def authenticate() -> Account:
         from O365 import Account
     except ImportError as e:
         raise ImportError(
-            "Cannot import 0365. Please install the package with `pip install O365`."
+            "Cannot import 0365. Please install the package with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' O365`."
         ) from e
 
     if "CLIENT_ID" in os.environ and "CLIENT_SECRET" in os.environ:

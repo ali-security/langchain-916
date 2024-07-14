@@ -56,7 +56,7 @@ class TwilioAPIWrapper(BaseModel):
         except ImportError:
             raise ImportError(
                 "Could not import twilio python package. "
-                "Please install it with `pip install twilio`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' twilio`."
             )
         account_sid = get_from_dict_or_env(values, "account_sid", "TWILIO_ACCOUNT_SID")
         auth_token = get_from_dict_or_env(values, "auth_token", "TWILIO_AUTH_TOKEN")

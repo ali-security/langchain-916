@@ -40,7 +40,7 @@ def load_dataset(uri: str) -> List[Dict]:
 
     .. code-block:: shell
 
-        pip install datasets
+        pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' datasets
 
     Examples
     --------
@@ -54,7 +54,7 @@ def load_dataset(uri: str) -> List[Dict]:
     except ImportError:
         raise ImportError(
             "load_dataset requires the `datasets` package."
-            " Please install with `pip install datasets`"
+            " Please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' datasets`"
         )
 
     dataset = load_dataset(f"LangChainDatasets/{uri}")

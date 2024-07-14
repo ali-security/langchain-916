@@ -74,7 +74,7 @@ class AmadeusFlightSearch(AmadeusBaseTool):
             from amadeus import ResponseError
         except ImportError as e:
             raise ImportError(
-                "Unable to import amadeus, please install with `pip install amadeus`."
+                "Unable to import amadeus, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' amadeus`."
             ) from e
 
         RESULTS_PER_PAGE = 10

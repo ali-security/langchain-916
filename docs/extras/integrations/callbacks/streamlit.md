@@ -17,7 +17,7 @@ interactive Streamlit app. Try it out with the running app below using the [MRKL
 ## Installation and Setup
 
 ```bash
-pip install langchain streamlit
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' langchain streamlit
 ```
 
 You can run `streamlit hello` to load a sample app and validate your install succeeded. See full instructions in Streamlit's

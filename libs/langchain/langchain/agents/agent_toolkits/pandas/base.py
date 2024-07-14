@@ -122,7 +122,7 @@ def _get_prompt_and_tools(
         pd.set_option("display.max_columns", None)
     except ImportError:
         raise ImportError(
-            "pandas package not found, please install with `pip install pandas`"
+            "pandas package not found, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`"
         )
 
     if include_df_in_prompt is not None and suffix is not None:
@@ -233,7 +233,7 @@ def _get_functions_prompt_and_tools(
         pd.set_option("display.max_columns", None)
     except ImportError:
         raise ImportError(
-            "pandas package not found, please install with `pip install pandas`"
+            "pandas package not found, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pandas`"
         )
     if input_variables is not None:
         raise ValueError("`input_variables` is not supported at the moment.")

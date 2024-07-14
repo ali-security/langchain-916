@@ -7,7 +7,7 @@ def get_pseudoanonymizer_mapping() -> Dict[str, Callable]:
         from faker import Faker
     except ImportError as e:
         raise ImportError(
-            "Could not import faker, please install it with `pip install Faker`."
+            "Could not import faker, please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' Faker`."
         ) from e
 
     fake = Faker()

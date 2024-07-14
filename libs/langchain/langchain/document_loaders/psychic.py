@@ -22,7 +22,7 @@ class PsychicLoader(BaseLoader):
             from psychicapi import ConnectorId, Psychic  # noqa: F401
         except ImportError:
             raise ImportError(
-                "`psychicapi` package not found, please run `pip install psychicapi`"
+                "`psychicapi` package not found, please run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' psychicapi`"
             )
         self.psychic = Psychic(secret_key=api_key)
         self.connector_id = ConnectorId(connector_id)

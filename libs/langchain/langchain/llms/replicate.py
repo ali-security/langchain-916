@@ -106,7 +106,7 @@ class Replicate(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import replicate python package. "
-                "Please install it with `pip install replicate`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' replicate`."
             )
 
         # get the model and version

@@ -144,7 +144,7 @@ class PyPDFLoader(BasePDFLoader):
             import pypdf  # noqa:F401
         except ImportError:
             raise ImportError(
-                "pypdf package not found, please install it with " "`pip install pypdf`"
+                "pypdf package not found, please install it with " "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pypdf`"
             )
         self.parser = PyPDFParser(password=password)
         super().__init__(file_path)
@@ -236,7 +236,7 @@ class PDFMinerLoader(BasePDFLoader):
         except ImportError:
             raise ImportError(
                 "`pdfminer` package not found, please install it with "
-                "`pip install pdfminer.six`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pdfminer.six`"
             )
 
         super().__init__(file_path)
@@ -264,7 +264,7 @@ class PDFMinerPDFasHTMLLoader(BasePDFLoader):
         except ImportError:
             raise ImportError(
                 "`pdfminer` package not found, please install it with "
-                "`pip install pdfminer.six`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pdfminer.six`"
             )
 
         super().__init__(file_path)
@@ -298,7 +298,7 @@ class PyMuPDFLoader(BasePDFLoader):
         except ImportError:
             raise ImportError(
                 "`PyMuPDF` package not found, please install it with "
-                "`pip install pymupdf`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pymupdf`"
             )
 
         super().__init__(file_path)
@@ -444,7 +444,7 @@ class PDFPlumberLoader(BasePDFLoader):
         except ImportError:
             raise ImportError(
                 "pdfplumber package not found, please install it with "
-                "`pip install pdfplumber`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pdfplumber`"
             )
 
         super().__init__(file_path)
@@ -509,7 +509,7 @@ class AmazonTextractPDFLoader(BasePDFLoader):
         except ImportError:
             raise ModuleNotFoundError(
                 "Could not import amazon-textract-caller python package. "
-                "Please install it with `pip install amazon-textract-caller`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' amazon-textract-caller`."
             )
         if textract_features:
             features = [tc.Textract_Features[x] for x in textract_features]
@@ -537,7 +537,7 @@ class AmazonTextractPDFLoader(BasePDFLoader):
             except ImportError:
                 raise ModuleNotFoundError(
                     "Could not import boto3 python package. "
-                    "Please install it with `pip install boto3`."
+                    "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' boto3`."
                 )
             except Exception as e:
                 raise ValueError(
@@ -581,7 +581,7 @@ class AmazonTextractPDFLoader(BasePDFLoader):
         except ImportError:
             raise ModuleNotFoundError(
                 "Could not import pypdf or Pilloe python package. "
-                "Please install it with `pip install pypdf Pillow`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pypdf Pillow`."
             )
         if blob.mimetype == "application/pdf":
             with blob.as_bytes_io() as input_pdf_file:

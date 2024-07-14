@@ -31,9 +31,9 @@ Read how to migrate your code [here](MIGRATE.md).
 
 ## Quick Install
 
-`pip install langchain`
+`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' langchain`
 or
-`pip install langsmith && conda install langchain -c conda-forge`
+`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' langsmith && conda install langchain -c conda-forge`
 
 ## 🤔 What is this?
 

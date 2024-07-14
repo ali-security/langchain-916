@@ -44,7 +44,7 @@ class GitLoader(BaseLoader):
         except ImportError as ex:
             raise ImportError(
                 "Could not import git python package. "
-                "Please install it with `pip install GitPython`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' GitPython`."
             ) from ex
 
         if not os.path.exists(self.repo_path) and self.clone_url is None:

@@ -53,7 +53,7 @@ class DoctranTextTranslator(BaseDocumentTransformer):
             )
         except ImportError:
             raise ImportError(
-                "Install doctran to use this parser. (pip install doctran)"
+                "Install doctran to use this parser. (pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' doctran)"
             )
         doctran_docs = [
             doctran.parse(content=doc.page_content, metadata=doc.metadata)

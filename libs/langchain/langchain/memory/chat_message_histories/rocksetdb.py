@@ -178,7 +178,7 @@ class RocksetChatMessageHistory(BaseChatMessageHistory):
         except ImportError:
             raise ImportError(
                 "Could not import rockset client python package. "
-                "Please install it with `pip install rockset`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' rockset`."
             )
 
         if not isinstance(client, rockset.RocksetClient):

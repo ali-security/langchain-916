@@ -77,7 +77,7 @@ class DocugamiLoader(BaseLoader, BaseModel):
         except ImportError:
             raise ImportError(
                 "Could not import lxml python package. "
-                "Please install it with `pip install lxml`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' lxml`."
             )
 
         # helpers
@@ -274,7 +274,7 @@ class DocugamiLoader(BaseLoader, BaseModel):
                     except ImportError:
                         raise ImportError(
                             "Could not import lxml python package. "
-                            "Please install it with `pip install lxml`."
+                            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' lxml`."
                         )
                     artifact_tree = etree.parse(io.BytesIO(response.content))
                     artifact_root = artifact_tree.getroot()

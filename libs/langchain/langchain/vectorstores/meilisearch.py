@@ -22,7 +22,7 @@ def _create_client(
     except ImportError:
         raise ImportError(
             "Could not import meilisearch python package. "
-            "Please install it with `pip install meilisearch`."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' meilisearch`."
         )
     if not client:
         url = url or get_from_env("url", "MEILI_HTTP_ADDR")

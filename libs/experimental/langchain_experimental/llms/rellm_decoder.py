@@ -26,7 +26,7 @@ def import_rellm() -> rellm:
     except ImportError:
         raise ImportError(
             "Could not import rellm python package. "
-            "Please install it with `pip install rellm`."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' rellm`."
         )
     return rellm
 

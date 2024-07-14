@@ -49,7 +49,7 @@ class Pinecone(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import pinecone python package. "
-                "Please install it with `pip install pinecone-client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pinecone-client`."
             )
         if not isinstance(index, pinecone.index.Index):
             raise ValueError(
@@ -346,7 +346,7 @@ class Pinecone(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import pinecone python package. "
-                "Please install it with `pip install pinecone-client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pinecone-client`."
             )
 
         indexes = pinecone.list_indexes()  # checks if provided index exists
@@ -404,7 +404,7 @@ class Pinecone(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import pinecone python package. "
-                "Please install it with `pip install pinecone-client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pinecone-client`."
             )
 
         return cls(pinecone.Index(index_name), embedding, text_key, namespace)

@@ -77,7 +77,7 @@ class EverNoteLoader(BaseLoader):
             raise ImportError(
                 "Could not import `html2text`. Although it is not a required package "
                 "to use Langchain, using the EverNote loader requires `html2text`. "
-                "Please install `html2text` via `pip install html2text` and try again."
+                "Please install `html2text` via `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' html2text` and try again."
             ) from e
 
     @staticmethod
@@ -137,7 +137,7 @@ class EverNoteLoader(BaseLoader):
             logger.error(
                 "Could not import `lxml`. Although it is not a required package to use "
                 "Langchain, using the EverNote loader requires `lxml`. Please install "
-                "`lxml` via `pip install lxml` and try again."
+                "`lxml` via `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' lxml` and try again."
             )
             raise e
 

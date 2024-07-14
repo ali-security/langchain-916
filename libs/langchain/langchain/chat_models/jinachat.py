@@ -224,7 +224,7 @@ class JinaChat(BaseChatModel):
         except ImportError:
             raise ValueError(
                 "Could not import openai python package. "
-                "Please install it with `pip install openai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`."
             )
         try:
             values["client"] = openai.ChatCompletion
@@ -232,7 +232,7 @@ class JinaChat(BaseChatModel):
             raise ValueError(
                 "`openai` has no `ChatCompletion` attribute, this is likely "
                 "due to an old version of the openai package. Try upgrading it "
-                "with `pip install --upgrade openai`."
+                "with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade openai`."
             )
         return values
 

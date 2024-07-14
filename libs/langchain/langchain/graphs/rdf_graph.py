@@ -129,7 +129,7 @@ class RdfGraph:
         except ImportError:
             raise ValueError(
                 "Could not import rdflib python package. "
-                "Please install it with `pip install rdflib`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' rdflib`."
             )
         if self.standard not in (supported_standards := ("rdf", "rdfs", "owl")):
             raise ValueError(

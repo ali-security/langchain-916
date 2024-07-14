@@ -94,7 +94,7 @@ class MatchingEngine(VectorStore):
             from google.oauth2 import service_account  # noqa: F401
         except ImportError:
             raise ImportError(
-                "You must run `pip install --upgrade "
+                "You must run `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade "
                 "google-cloud-aiplatform google-cloud-storage`"
                 "to use the MatchingEngine Vectorstore."
             )

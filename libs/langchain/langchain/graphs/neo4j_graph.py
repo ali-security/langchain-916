@@ -38,7 +38,7 @@ class Neo4jGraph:
         except ImportError:
             raise ValueError(
                 "Could not import neo4j python package. "
-                "Please install it with `pip install neo4j`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' neo4j`."
             )
 
         self._driver = neo4j.GraphDatabase.driver(url, auth=(username, password))

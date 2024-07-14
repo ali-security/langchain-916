@@ -30,7 +30,7 @@ class GraphQLAPIWrapper(BaseModel):
         except ImportError as e:
             raise ImportError(
                 "Could not import gql python package. "
-                f"Try installing it with `pip install gql`. Received error: {e}"
+                f"Try installing it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' gql`. Received error: {e}"
             )
         headers = values.get("custom_headers")
         transport = RequestsHTTPTransport(

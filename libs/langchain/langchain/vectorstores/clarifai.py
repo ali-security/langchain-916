@@ -57,7 +57,7 @@ class Clarifai(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             )
 
         if api_base is None:
@@ -104,7 +104,7 @@ class Clarifai(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             ) from e
 
         if metadatas is not None:
@@ -220,7 +220,7 @@ class Clarifai(VectorStore):
         except ImportError as e:
             raise ImportError(
                 "Could not import clarifai python package. "
-                "Please install it with `pip install clarifai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai`."
             ) from e
 
         # Get number of docs to return

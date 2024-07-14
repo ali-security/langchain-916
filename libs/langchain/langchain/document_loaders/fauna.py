@@ -38,7 +38,7 @@ class FaunaLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "Could not import fauna python package. "
-                "Please install it with `pip install fauna`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' fauna`."
             )
         # Create Fauna Client
         client = Client(secret=self.secret)

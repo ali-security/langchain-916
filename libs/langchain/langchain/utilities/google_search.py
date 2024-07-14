@@ -17,7 +17,7 @@ class GoogleSearchAPIWrapper(BaseModel):
     - If you don't already have a Google account, sign up.
     - If you have never created a Google APIs Console project,
     read the Managing Projects page and create a project in the Google API Console.
-    - Install the library using pip install google-api-python-client
+    - Install the library using pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-api-python-client
     The current version of the library is 2.70.0 at this time
 
     2. To create an API key:
@@ -79,7 +79,7 @@ class GoogleSearchAPIWrapper(BaseModel):
         except ImportError:
             raise ImportError(
                 "google-api-python-client is not installed. "
-                "Please install it with `pip install google-api-python-client`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-api-python-client`"
             )
 
         service = build("customsearch", "v1", developerKey=google_api_key)

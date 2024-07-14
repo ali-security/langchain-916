@@ -95,7 +95,7 @@ class _AnthropicCommon(BaseLanguageModel):
         except ImportError:
             raise ImportError(
                 "Could not import anthropic python package. "
-                "Please it install it with `pip install anthropic`."
+                "Please it install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' anthropic`."
             )
         return values
 

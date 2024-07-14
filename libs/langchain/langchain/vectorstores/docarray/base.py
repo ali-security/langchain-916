@@ -23,12 +23,12 @@ def _check_docarray_import() -> None:
             raise ImportError(
                 f"To use the DocArrayHnswSearch VectorStore the docarray "
                 f"version >=0.32.0 is expected, received: {docarray.__version__}."
-                f"To upgrade, please run: `pip install -U docarray`."
+                f"To upgrade, please run: `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -U docarray`."
             )
     except ImportError:
         raise ImportError(
             "Could not import docarray python package. "
-            'Please install it with `pip install "langchain[docarray]"`.'
+            'Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "langchain[docarray]"`.'
         )
 
 

@@ -43,7 +43,7 @@ class ZepRetriever(BaseRetriever):
         except ImportError:
             raise ValueError(
                 "Could not import zep-python package. "
-                "Please install it with `pip install zep-python`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' zep-python`."
             )
         values["zep_client"] = values.get(
             "zep_client",

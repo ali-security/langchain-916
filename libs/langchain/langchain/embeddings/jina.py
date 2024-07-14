@@ -36,7 +36,7 @@ class JinaEmbeddings(BaseModel, Embeddings):
         except ImportError:
             raise ImportError(
                 "Could not import `jina` python package. "
-                "Please install it with `pip install jina`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' jina`."
             )
 
         # Setup client

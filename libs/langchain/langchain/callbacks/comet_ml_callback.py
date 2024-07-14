@@ -25,7 +25,7 @@ def import_comet_ml() -> Any:
         raise ImportError(
             "To use the comet_ml callback manager you need to have the "
             "`comet_ml` python package installed. Please install it with"
-            " `pip install comet_ml`"
+            " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' comet_ml`"
         )
     return comet_ml
 

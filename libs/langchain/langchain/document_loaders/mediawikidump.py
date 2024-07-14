@@ -67,7 +67,7 @@ class MWDumpLoader(BaseLoader):
         except ImportError as e:
             raise ImportError(
                 "Unable to import 'mwparserfromhell' or 'mwxml'. Please install with"
-                " `pip install mwparserfromhell mwxml`."
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' mwparserfromhell mwxml`."
             ) from e
 
         dump = mwxml.Dump.from_file(open(self.file_path, encoding=self.encoding))

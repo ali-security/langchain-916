@@ -47,7 +47,7 @@ class Dingo(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import dingo python package. "
-                "Please install it with `pip install dingodb."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dingodb."
             )
 
         host = host if host is not None else ["172.20.31.10:13000"]
@@ -302,7 +302,7 @@ class Dingo(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import dingo python package. "
-                "Please install it with `pip install dingodb`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' dingodb`."
             )
 
         if client is not None:

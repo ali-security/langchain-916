@@ -147,7 +147,7 @@ class O365BaseLoader(BaseLoader, BaseModel):
             from O365 import Account, FileSystemTokenBackend
         except ImportError:
             raise ImportError(
-                "O365 package not found, please install it with `pip install o365`"
+                "O365 package not found, please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' o365`"
             )
         if self.auth_with_token:
             token_storage = _O365TokenStorage()

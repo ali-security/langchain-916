@@ -7,11 +7,11 @@ This guide covers how to migrate.
 
 Previously:
 
-`pip install -U langchain`
+`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -U langchain`
 
 Now (only if you want to access things in experimental):
 
-`pip install -U langchain langchain_experimental`
+`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -U langchain langchain_experimental`
 
 ## Things in `langchain.experimental`
 

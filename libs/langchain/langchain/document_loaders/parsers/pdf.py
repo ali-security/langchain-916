@@ -90,7 +90,7 @@ class PyPDFium2Parser(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "pypdfium2 package not found, please install it with"
-                " `pip install pypdfium2`"
+                " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pypdfium2`"
             )
 
     def lazy_parse(self, blob: Blob) -> Iterator[Document]:
@@ -185,7 +185,7 @@ class AmazonTextractPDFParser(BaseBlobParser):
         except ImportError:
             raise ImportError(
                 "Could not import amazon-textract-caller python package. "
-                "Please install it with `pip install amazon-textract-caller`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' amazon-textract-caller`."
             )
 
         if not client:
@@ -196,7 +196,7 @@ class AmazonTextractPDFParser(BaseBlobParser):
             except ImportError:
                 raise ImportError(
                     "Could not import boto3 python package. "
-                    "Please install it with `pip install boto3`."
+                    "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' boto3`."
                 )
         else:
             self.boto3_textract_client = client

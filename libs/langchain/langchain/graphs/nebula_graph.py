@@ -37,7 +37,7 @@ class NebulaGraph:
         except ImportError:
             raise ValueError(
                 "Please install NebulaGraph Python client and pandas first: "
-                "`pip install nebula3-python pandas`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' nebula3-python pandas`"
             )
 
         self.username = username

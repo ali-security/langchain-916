@@ -32,7 +32,7 @@ class AsyncChromiumLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "playwright is required for AsyncChromiumLoader. "
-                "Please install it with `pip install playwright`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' playwright`."
             )
 
     async def ascrape_playwright(self, url: str) -> str:

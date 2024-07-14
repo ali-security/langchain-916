@@ -9,7 +9,7 @@ class DallEAPIWrapper(BaseModel):
     """Wrapper for OpenAI's DALL-E Image Generator.
 
     Docs for using:
-    1. pip install openai
+    1. pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai
     2. save your OPENAI_API_KEY in an environment variable
 
     """
@@ -45,7 +45,7 @@ class DallEAPIWrapper(BaseModel):
         except ImportError:
             raise ValueError(
                 "Could not import openai python package. "
-                "Please it install it with `pip install openai`."
+                "Please it install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openai`."
             )
         return values
 

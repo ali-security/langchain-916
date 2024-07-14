@@ -386,7 +386,7 @@ def load_huggingface_tool(
             "HuggingFace tools require the libraries `transformers>=4.29.0`"
             " and `huggingface_hub>=0.14.1` to be installed."
             " Please install it with"
-            " `pip install --upgrade transformers huggingface_hub`."
+            " `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade transformers huggingface_hub`."
         )
     hf_tool = load_tool(
         task_or_repo_id,

@@ -21,7 +21,7 @@ class GeoDataFrameLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "geopandas package not found, please install it with "
-                "`pip install geopandas`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' geopandas`"
             )
 
         if not isinstance(data_frame, gpd.GeoDataFrame):

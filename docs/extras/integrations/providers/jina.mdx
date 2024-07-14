@@ -4,7 +4,7 @@ This page covers how to use the Jina ecosystem within LangChain.
 It is broken into two parts: installation and setup, and then references to specific Jina wrappers.
 
 ## Installation and Setup
-- Install the Python SDK with `pip install jina`
+- Install the Python SDK with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' jina`
 - Get a Jina AI Cloud auth token from [here](https://cloud.jina.ai/settings/tokens) and set it as an environment variable (`JINA_AUTH_TOKEN`)
 
 ## Wrappers
@@ -26,7 +26,7 @@ For a more detailed walkthrough of this, see [this notebook](/docs/integrations/
 Install the package from PyPI. 
 
 ```bash
-pip install langchain-serve
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' langchain-serve
 ```
 
 Wrap your LangChain app with the `@serving` decorator. 

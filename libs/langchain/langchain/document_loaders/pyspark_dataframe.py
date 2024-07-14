@@ -36,7 +36,7 @@ class PySparkDataFrameLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "pyspark is not installed. "
-                "Please install it with `pip install pyspark`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyspark`"
             )
 
         self.spark = (
@@ -60,7 +60,7 @@ class PySparkDataFrameLoader(BaseLoader):
             import psutil
         except ImportError as e:
             raise ImportError(
-                "psutil not installed. Please install it with `pip install psutil`."
+                "psutil not installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' psutil`."
             ) from e
         row = self.df.limit(1).collect()[0]
         estimated_row_size = sys.getsizeof(row)

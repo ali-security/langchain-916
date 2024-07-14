@@ -31,7 +31,7 @@ class XataVectorStore(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import xata python package. "
-                "Please install it with `pip install xata`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' xata`."
             )
         self._client = XataClient(api_key=api_key, db_url=db_url)
         self._embedding: Embeddings = embedding

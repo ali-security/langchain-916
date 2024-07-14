@@ -29,7 +29,7 @@ def _lazy_import_promptlayer() -> promptlayer:
     except ImportError:
         raise ImportError(
             "The PromptLayerCallbackHandler requires the promptlayer package. "
-            " Please install it with `pip install promptlayer`."
+            " Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' promptlayer`."
         )
     return promptlayer
 

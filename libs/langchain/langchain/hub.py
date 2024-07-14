@@ -15,7 +15,7 @@ def _get_client(api_url: Optional[str] = None, api_key: Optional[str] = None) ->
         from langchainhub import Client
     except ImportError as e:
         raise ImportError(
-            "Could not import langchainhub, please install with `pip install "
+            "Could not import langchainhub, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "
             "langchainhub`."
         ) from e
 

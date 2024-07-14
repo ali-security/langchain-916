@@ -46,7 +46,7 @@ class MaxComputeAPIWrapper:
         except ImportError as ex:
             raise ImportError(
                 "Could not import pyodps python package. "
-                "Please install it with `pip install pyodps` or refer to "
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pyodps` or refer to "
                 "https://pyodps.readthedocs.io/."
             ) from ex
         access_id = access_id or get_from_env("access_id", "MAX_COMPUTE_ACCESS_ID")

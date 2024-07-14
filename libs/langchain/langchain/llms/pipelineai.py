@@ -93,7 +93,7 @@ class PipelineAI(LLM, BaseModel):
         except ImportError:
             raise ValueError(
                 "Could not import pipeline-ai python package. "
-                "Please install it with `pip install pipeline-ai`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pipeline-ai`."
             )
         client = PipelineCloud(token=self.pipeline_api_key)
         params = self.pipeline_kwargs or {}

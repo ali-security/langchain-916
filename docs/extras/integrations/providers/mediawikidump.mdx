@@ -11,14 +11,14 @@ We need to install several python packages.
 
 The `mediawiki-utilities` supports XML schema 0.11 in unmerged branches.
 ```bash
-pip install -qU git+https://github.com/mediawiki-utilities/python-mwtypes@updates_schema_0.11
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -qU git+https://github.com/mediawiki-utilities/python-mwtypes@updates_schema_0.11
 ```
 
 The `mediawiki-utilities mwxml` has a bug, fix PR pending.
 
 ```bash
-pip install -qU git+https://github.com/gdedrouas/python-mwxml@xml_format_0.11
-pip install -qU mwparserfromhell
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -qU git+https://github.com/gdedrouas/python-mwxml@xml_format_0.11
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -qU mwparserfromhell
 ```
 
 ## Document Loader

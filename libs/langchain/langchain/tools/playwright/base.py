@@ -31,7 +31,7 @@ def lazy_import_playwright_browsers() -> Tuple[Type[AsyncBrowser], Type[SyncBrow
     except ImportError:
         raise ImportError(
             "The 'playwright' package is required to use the playwright tools."
-            " Please install it with 'pip install playwright'."
+            " Please install it with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' playwright'."
         )
     return AsyncBrowser, SyncBrowser
 

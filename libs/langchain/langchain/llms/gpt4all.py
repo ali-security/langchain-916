@@ -129,7 +129,7 @@ class GPT4All(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import gpt4all python package. "
-                "Please install it with `pip install gpt4all`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' gpt4all`."
             )
 
         full_path = values["model"]

@@ -30,7 +30,7 @@ class TencentCOSFileLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "Could not import cos-python-sdk-v5 python package. "
-                "Please install it with `pip install cos-python-sdk-v5`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' cos-python-sdk-v5`."
             )
 
         # Initialise a client

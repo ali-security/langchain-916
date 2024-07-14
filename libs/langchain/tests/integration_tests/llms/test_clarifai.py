@@ -1,7 +1,7 @@
 """Test Clarifai API wrapper.
 In order to run this test, you need to have an account on Clarifai.
 You can sign up for free at https://clarifai.com/signup.
-pip install clarifai
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clarifai
 
 You'll need to set env variable CLARIFAI_PAT_KEY to your personal access token key.
 """

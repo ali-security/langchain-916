@@ -23,7 +23,7 @@ def import_clearml() -> Any:
     except ImportError:
         raise ImportError(
             "To use the clearml callback manager you need to have the `clearml` python "
-            "package installed. Please install it with `pip install clearml`"
+            "package installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' clearml`"
         )
     return clearml
 

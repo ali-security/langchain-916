@@ -34,7 +34,7 @@ class ApifyWrapper(BaseModel):
         except ImportError:
             raise ValueError(
                 "Could not import apify-client Python package. "
-                "Please install it with `pip install apify-client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' apify-client`."
             )
 
         return values

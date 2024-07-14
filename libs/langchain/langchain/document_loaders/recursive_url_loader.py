@@ -113,7 +113,7 @@ class RecursiveUrlLoader(BaseLoader):
             from bs4 import BeautifulSoup
         except ImportError:
             print("The bs4 package is required for the RecursiveUrlLoader.")
-            print("Please install it with `pip install bs4`.")
+            print("Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4`.")
         metadata = {"source": url}
         soup = BeautifulSoup(raw_html, "html.parser")
         if title := soup.find("title"):
@@ -194,7 +194,7 @@ class RecursiveUrlLoader(BaseLoader):
             import aiohttp
         except ImportError:
             print("The aiohttp package is required for the RecursiveUrlLoader.")
-            print("Please install it with `pip install aiohttp`.")
+            print("Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' aiohttp`.")
         if depth > self.max_depth:
             return []
 

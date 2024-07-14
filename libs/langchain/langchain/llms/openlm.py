@@ -20,7 +20,7 @@ class OpenLM(BaseOpenAI):
         except ImportError:
             raise ImportError(
                 "Could not import openlm python package. "
-                "Please install it with `pip install openlm`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' openlm`."
             )
         if values["streaming"]:
             raise ValueError("Streaming not supported with openlm")

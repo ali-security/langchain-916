@@ -68,14 +68,14 @@ class TensorflowDatasets(BaseModel):
         except ImportError:
             raise ImportError(
                 "Could not import tensorflow python package. "
-                "Please install it with `pip install tensorflow`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tensorflow`."
             )
         try:
             import tensorflow_datasets
         except ImportError:
             raise ImportError(
                 "Could not import tensorflow_datasets python package. "
-                "Please install it with `pip install tensorflow-datasets`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' tensorflow-datasets`."
             )
         if values["sample_to_document_function"] is None:
             raise ValueError(

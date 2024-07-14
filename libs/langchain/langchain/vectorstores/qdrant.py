@@ -103,7 +103,7 @@ class Qdrant(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import qdrant-client python package. "
-                "Please install it with `pip install qdrant-client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' qdrant-client`."
             )
 
         if not isinstance(client, qdrant_client.QdrantClient):
@@ -1548,7 +1548,7 @@ class Qdrant(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import qdrant-client python package. "
-                "Please install it with `pip install qdrant-client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' qdrant-client`."
             )
         from grpc import RpcError
         from qdrant_client.http import models as rest
@@ -1714,7 +1714,7 @@ class Qdrant(VectorStore):
         except ImportError:
             raise ValueError(
                 "Could not import qdrant-client python package. "
-                "Please install it with `pip install qdrant-client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' qdrant-client`."
             )
         from grpc import RpcError
         from qdrant_client.http import models as rest

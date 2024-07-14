@@ -45,8 +45,8 @@ fi
 cd ..
 python3.11 -m venv .venv
 source .venv/bin/activate
-python3.11 -m pip install --upgrade pip
-python3.11 -m pip install -r vercel_requirements.txt
+python3.11 -m pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' --upgrade pip
+python3.11 -m pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -r vercel_requirements.txt
 cp -r extras/* docs_skeleton/docs
 cd docs_skeleton
 nbdoc_build

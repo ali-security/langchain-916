@@ -159,7 +159,7 @@ def get_arangodb_client(
         from arango import ArangoClient
     except ImportError as e:
         raise ImportError(
-            "Unable to import arango, please install with `pip install python-arango`."
+            "Unable to import arango, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' python-arango`."
         ) from e
 
     _url: str = url or os.environ.get("ARANGODB_URL", "http://localhost:8529")  # type: ignore[assignment]  # noqa: E501

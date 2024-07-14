@@ -8,7 +8,7 @@ import CodeBlock from "@theme/CodeBlock";
 
 <Tabs>
   <TabItem value="pip" label="Pip" default>
-    <CodeBlock language="bash">pip install langchain</CodeBlock>
+    <CodeBlock language="bash">pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' langchain</CodeBlock>
   </TabItem>
   <TabItem value="conda" label="Conda">
     <CodeBlock language="bash">conda install langchain -c conda-forge</CodeBlock>
@@ -23,19 +23,19 @@ However, there are two other ways to install LangChain that do bring in those de
 To install modules needed for the common LLM providers, run:
 
 ```bash
-pip install langchain[llms]
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' langchain[llms]
 ```
 
 To install all modules needed for all integrations, run:
 
 ```bash
-pip install langchain[all]
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' langchain[all]
 ```
 
 Note that if you are using `zsh`, you'll need to quote square brackets when passing them as an argument to a command, for example:
 
 ```bash
-pip install 'langchain[all]'
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' 'langchain[all]'
 ```
 
 ## From source
@@ -43,5 +43,5 @@ pip install 'langchain[all]'
 If you want to install from source, you can do so by cloning the repo and be sure that the directory is `PATH/TO/REPO/langchain/libs/langchain` running:
 
 ```bash
-pip install -e .
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' -e .
 ```

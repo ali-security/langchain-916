@@ -54,7 +54,7 @@ class BigQueryLoader(BaseLoader):
         except ImportError as ex:
             raise ImportError(
                 "Could not import google-cloud-bigquery python package. "
-                "Please install it with `pip install google-cloud-bigquery`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-bigquery`."
             ) from ex
 
         bq_client = bigquery.Client(credentials=self.credentials, project=self.project)

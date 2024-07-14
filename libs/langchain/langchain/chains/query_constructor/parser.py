@@ -148,7 +148,7 @@ def get_parser(
     # QueryTransformer is None when Lark cannot be imported.
     if QueryTransformer is None:
         raise ImportError(
-            "Cannot import lark, please install it with 'pip install lark'."
+            "Cannot import lark, please install it with 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' lark'."
         )
     transformer = QueryTransformer(
         allowed_comparators=allowed_comparators, allowed_operators=allowed_operators

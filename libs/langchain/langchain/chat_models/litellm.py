@@ -284,7 +284,7 @@ class ChatLiteLLM(BaseChatModel):
         except ImportError:
             raise ChatLiteLLMException(
                 "Could not import google.generativeai python package. "
-                "Please install it with `pip install google-generativeai`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-generativeai`"
             )
 
         values["openai_api_key"] = get_from_dict_or_env(

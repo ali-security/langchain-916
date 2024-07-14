@@ -47,7 +47,7 @@ class GuardrailsOutputParser(BaseOutputParser):
         except ImportError:
             raise ImportError(
                 "guardrails-ai package not installed. "
-                "Install it by running `pip install guardrails-ai`."
+                "Install it by running `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' guardrails-ai`."
             )
         return cls(
             guard=Guard.from_rail(rail_file, num_reasks=num_reasks),
@@ -70,7 +70,7 @@ class GuardrailsOutputParser(BaseOutputParser):
         except ImportError:
             raise ImportError(
                 "guardrails-ai package not installed. "
-                "Install it by running `pip install guardrails-ai`."
+                "Install it by running `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' guardrails-ai`."
             )
         return cls(
             guard=Guard.from_rail_string(rail_str, num_reasks=num_reasks),
@@ -93,7 +93,7 @@ class GuardrailsOutputParser(BaseOutputParser):
         except ImportError:
             raise ImportError(
                 "guardrails-ai package not installed. "
-                "Install it by running `pip install guardrails-ai`."
+                "Install it by running `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' guardrails-ai`."
             )
         return cls(
             guard=Guard.from_pydantic(output_class, "", num_reasks=num_reasks),

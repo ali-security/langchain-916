@@ -57,7 +57,7 @@ class Crawler:
         except ImportError:
             raise ImportError(
                 "Could not import playwright python package. "
-                "Please install it with `pip install playwright`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' playwright`."
             )
         self.browser: Browser = (
             sync_playwright().start().chromium.launch(headless=False)

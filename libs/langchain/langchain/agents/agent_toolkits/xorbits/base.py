@@ -36,7 +36,7 @@ def create_xorbits_agent(
         from xorbits import pandas as pd
     except ImportError:
         raise ImportError(
-            "Xorbits package not installed, please install with `pip install xorbits`"
+            "Xorbits package not installed, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' xorbits`"
         )
 
     if not isinstance(data, (pd.DataFrame, np.ndarray)):

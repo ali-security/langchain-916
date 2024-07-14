@@ -52,7 +52,7 @@ class BM25Retriever(BaseRetriever):
             from rank_bm25 import BM25Okapi
         except ImportError:
             raise ImportError(
-                "Could not import rank_bm25, please install with `pip install "
+                "Could not import rank_bm25, please install with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "
                 "rank_bm25`."
             )
 

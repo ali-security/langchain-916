@@ -77,7 +77,7 @@ class OneDriveLoader(O365BaseLoader):
             from O365.drive import Drive
         except ImportError:
             raise ImportError(
-                "O365 package not found, please install it with `pip install o365`"
+                "O365 package not found, please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' o365`"
             )
         drive = self._auth().storage().get_drive(self.drive_id)
         if not isinstance(drive, Drive):

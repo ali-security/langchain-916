@@ -41,7 +41,7 @@ class JiraAPIWrapper(BaseModel):
         except ImportError:
             raise ImportError(
                 "atlassian-python-api is not installed. "
-                "Please install it with `pip install atlassian-python-api`"
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' atlassian-python-api`"
             )
 
         jira = Jira(
@@ -133,7 +133,7 @@ class JiraAPIWrapper(BaseModel):
             import json
         except ImportError:
             raise ImportError(
-                "json is not installed. Please install it with `pip install json`"
+                "json is not installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' json`"
             )
         params = json.loads(query)
         return self.jira.issue_create(fields=dict(params))
@@ -143,7 +143,7 @@ class JiraAPIWrapper(BaseModel):
             import json
         except ImportError:
             raise ImportError(
-                "json is not installed. Please install it with `pip install json`"
+                "json is not installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' json`"
             )
         params = json.loads(query)
         return self.confluence.create_page(**dict(params))
@@ -153,7 +153,7 @@ class JiraAPIWrapper(BaseModel):
             import json
         except ImportError:
             raise ImportError(
-                "json is not installed. Please install it with `pip install json`"
+                "json is not installed. Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' json`"
             )
         params = json.loads(query)
         jira_function = getattr(self.jira, params["function"])

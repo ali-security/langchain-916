@@ -96,7 +96,7 @@ class SupabaseVectorStore(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import supabase python package. "
-                "Please install it with `pip install supabase`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' supabase`."
             )
 
         self._client = client

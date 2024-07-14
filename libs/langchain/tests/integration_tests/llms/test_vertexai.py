@@ -2,7 +2,7 @@
 In order to run this test, you need to install VertexAI SDK (that is is the private
 preview)  and be whitelisted to list the models themselves:
 In order to run this test, you need to install VertexAI SDK 
-pip install google-cloud-aiplatform>=1.25.0
+pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-aiplatform>=1.25.0
 
 Your end-user credentials would be used to make the calls (make sure you've run 
 `gcloud auth login` first).

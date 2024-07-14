@@ -46,7 +46,7 @@ class SpacyEmbeddings(BaseModel, Embeddings):
         if importlib.util.find_spec("spacy") is None:
             raise ValueError(
                 "Spacy package not found. "
-                "Please install it with `pip install spacy`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' spacy`."
             )
         try:
             # Try to load the 'en_core_web_sm' Spacy model

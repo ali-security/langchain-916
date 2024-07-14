@@ -61,7 +61,7 @@ jobs:
           # Install via `pip` instead of `poetry add` to avoid changing lockfile,
           # which would prevent caching from working: the cache would get saved
           # to a different key than where it gets loaded from.
-          poetry run pip install "pydantic${PYDANTIC_DEP}"
+          poetry run pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' "pydantic${PYDANTIC_DEP}"
 
           # Ensure that the correct pydantic is installed now.
           echo "Checking pydantic version... Expecting ${TEST_WITH_VERSION}"

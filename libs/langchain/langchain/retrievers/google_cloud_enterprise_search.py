@@ -94,7 +94,7 @@ class GoogleCloudEnterpriseSearchRetriever(BaseRetriever):
         except ImportError as exc:
             raise ImportError(
                 "google.cloud.discoveryengine is not installed."
-                "Please install it with pip install google-cloud-discoveryengine"
+                "Please install it with pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-discoveryengine"
             ) from exc
 
         try:
@@ -102,7 +102,7 @@ class GoogleCloudEnterpriseSearchRetriever(BaseRetriever):
         except ImportError as exc:
             raise ImportError(
                 "google.api_core.exceptions is not installed. "
-                "Please install it with pip install google-api-core"
+                "Please install it with pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-api-core"
             ) from exc
 
         values["project_id"] = get_from_dict_or_env(values, "project_id", "PROJECT_ID")
@@ -119,7 +119,7 @@ class GoogleCloudEnterpriseSearchRetriever(BaseRetriever):
         except ImportError:
             raise ImportError(
                 "google.cloud.discoveryengine is not installed."
-                "Please install it with pip install google-cloud-discoveryengine"
+                "Please install it with pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' google-cloud-discoveryengine"
             )
 
         super().__init__(**data)

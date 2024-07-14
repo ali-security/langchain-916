@@ -85,7 +85,7 @@ class BibtexLoader(BaseLoader):
         except ImportError:
             raise ImportError(
                 "PyMuPDF package not found, please install it with "
-                "`pip install pymupdf`"
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pymupdf`"
             )
 
         entries = self.parser.load_bibtex_entries(self.file_path)

@@ -74,7 +74,7 @@ class NGramOverlapExampleSelector(BaseExampleSelector, BaseModel):
         except ImportError as e:
             raise ImportError(
                 "Not all the correct dependencies for this ExampleSelect exist."
-                "Please install nltk with `pip install nltk`."
+                "Please install nltk with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' nltk`."
             ) from e
 
         return values

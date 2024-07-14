@@ -88,7 +88,7 @@
         "AutoGPT": "https://python.langchain.com/docs/use_cases/autonomous_agents/autogpt",
         "BabyAGI User Guide": "https://python.langchain.com/docs/use_cases/agents/baby_agi",
         "BabyAGI with Tools": "https://python.langchain.com/docs/use_cases/agents/baby_agi_with_agent",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
         "QA over Documents": "https://python.langchain.com/docs/use_cases/question_answering/index",
         "Perform context-aware text splitting": "https://python.langchain.com/docs/use_cases/question_answering/how_to/document-context-aware-QA",
         "Conversational Retrieval Agent": "https://python.langchain.com/docs/use_cases/question_answering/how_to/conversational_retrieval_agents",
@@ -236,7 +236,7 @@
         "Web Scraping": "https://python.langchain.com/docs/use_cases/web_scraping",
         "Chatbots": "https://python.langchain.com/docs/use_cases/chatbots",
         "Code Understanding": "https://python.langchain.com/docs/use_cases/code_understanding",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
         "QA over Documents": "https://python.langchain.com/docs/use_cases/question_answering/index",
         "Perform context-aware text splitting": "https://python.langchain.com/docs/use_cases/question_answering/how_to/document-context-aware-QA",
         "Use local LLMs": "https://python.langchain.com/docs/use_cases/question_answering/how_to/local_retrieval_qa",
@@ -321,7 +321,7 @@
         "Tagging": "https://python.langchain.com/docs/use_cases/tagging",
         "Code Understanding": "https://python.langchain.com/docs/use_cases/code_understanding",
         "AutoGPT": "https://python.langchain.com/docs/use_cases/autonomous_agents/autogpt",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
         "QA over Documents": "https://python.langchain.com/docs/use_cases/question_answering/index",
         "Perform context-aware text splitting": "https://python.langchain.com/docs/use_cases/question_answering/how_to/document-context-aware-QA",
         "Conversational Retrieval Agent": "https://python.langchain.com/docs/use_cases/question_answering/how_to/conversational_retrieval_agents",
@@ -577,7 +577,7 @@
         "AutoGPT": "https://python.langchain.com/docs/use_cases/autonomous_agents/autogpt",
         "BabyAGI User Guide": "https://python.langchain.com/docs/use_cases/agents/baby_agi",
         "BabyAGI with Tools": "https://python.langchain.com/docs/use_cases/agents/baby_agi_with_agent",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
         "Conversational Retrieval Agent": "https://python.langchain.com/docs/use_cases/question_answering/how_to/conversational_retrieval_agents",
         "Plug-and-Plai": "https://python.langchain.com/docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai",
         "Custom Agent with PlugIn Retrieval": "https://python.langchain.com/docs/use_cases/agents/custom_agent_with_plugin_retrieval",
@@ -771,7 +771,7 @@
         "Airbyte Zendesk Support": "https://python.langchain.com/docs/integrations/document_loaders/airbyte_zendesk_support",
         "SageMakerEndpoint": "https://python.langchain.com/docs/integrations/llms/sagemaker",
         "Caching integrations": "https://python.langchain.com/docs/integrations/llms/llm_caching",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
         "Retrieve from vector stores directly": "https://python.langchain.com/docs/use_cases/question_answering/how_to/vector_db_text_generation",
         "Multiple Retrieval Sources": "https://python.langchain.com/docs/use_cases/question_answering/how_to/multiple_retrieval",
         "Retrieve as you generate with FLARE": "https://python.langchain.com/docs/use_cases/question_answering/how_to/flare",
@@ -1096,7 +1096,7 @@
     },
     "HumanInputRun": {
         "Human as a tool": "https://python.langchain.com/docs/integrations/tools/human_tools",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
     },
     "NucliaUnderstandingAPI": {
         "Nuclia Understanding API tool": "https://python.langchain.com/docs/integrations/tools/nuclia",
@@ -1224,7 +1224,7 @@
         "Metaphor Search": "https://python.langchain.com/docs/integrations/tools/metaphor_search",
         "JSONFormer": "https://python.langchain.com/docs/integrations/llms/jsonformer_experimental",
         "Agent Trajectory": "https://python.langchain.com/docs/guides/evaluation/trajectory/trajectory_eval",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
         "Defining Custom Tools": "https://python.langchain.com/docs/modules/agents/tools/custom_tools",
         "XML Agent": "https://python.langchain.com/docs/modules/agents/agent_types/xml_agent"
     },
@@ -1310,7 +1310,7 @@
         "DuckDuckGo Search": "https://python.langchain.com/docs/integrations/tools/ddg",
         "Github Toolkit": "https://python.langchain.com/docs/integrations/toolkits/github",
         "Cookbook": "https://python.langchain.com/docs/guides/expression_language/cookbook",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
     },
     "DuckDuckGoSearchResults": {
         "DuckDuckGo Search": "https://python.langchain.com/docs/integrations/tools/ddg"
@@ -1371,7 +1371,7 @@
     "ReadFileTool": {
         "File System Tools": "https://python.langchain.com/docs/integrations/tools/filesystem",
         "AutoGPT": "https://python.langchain.com/docs/use_cases/autonomous_agents/autogpt",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
     },
     "CopyFileTool": {
         "File System Tools": "https://python.langchain.com/docs/integrations/tools/filesystem"
@@ -1386,7 +1386,7 @@
     "WriteFileTool": {
         "File System Tools": "https://python.langchain.com/docs/integrations/tools/filesystem",
         "AutoGPT": "https://python.langchain.com/docs/use_cases/autonomous_agents/autogpt",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
     },
     "ListDirectoryTool": {
         "File System Tools": "https://python.langchain.com/docs/integrations/tools/filesystem"
@@ -2248,7 +2248,7 @@
     },
     "load_qa_with_sources_chain": {
         "Chat Over Documents with Vectara": "https://python.langchain.com/docs/integrations/providers/vectara/vectara_chat",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
     },
     "QA_PROMPT": {
         "Chat Over Documents with Vectara": "https://python.langchain.com/docs/integrations/providers/vectara/vectara_chat"
@@ -2351,7 +2351,7 @@
     },
     "create_pandas_dataframe_agent": {
         "Pandas Dataframe Agent": "https://python.langchain.com/docs/integrations/toolkits/pandas",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
     },
     "MultionToolkit": {
         "MultiOn Toolkit": "https://python.langchain.com/docs/integrations/toolkits/multion"
@@ -2411,7 +2411,7 @@
         "AutoGPT": "https://python.langchain.com/docs/use_cases/autonomous_agents/autogpt",
         "BabyAGI User Guide": "https://python.langchain.com/docs/use_cases/agents/baby_agi",
         "BabyAGI with Tools": "https://python.langchain.com/docs/use_cases/agents/baby_agi_with_agent",
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
         "Generative Agents in LangChain": "https://python.langchain.com/docs/use_cases/agent_simulations/characters"
     },
     "OpenAIChat": {
@@ -3059,13 +3059,13 @@
         "Custom chain": "https://python.langchain.com/docs/modules/chains/how_to/custom_chain"
     },
     "BaseTool": {
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times",
         "Defining Custom Tools": "https://python.langchain.com/docs/modules/agents/tools/custom_tools",
         "Combine agents and vector stores": "https://python.langchain.com/docs/modules/agents/how_to/agent_vectorstore",
         "Custom functions with OpenAI Functions Agent": "https://python.langchain.com/docs/modules/agents/how_to/custom-functions-with-openai-functions-agent"
     },
     "BaseCombineDocumentsChain": {
-        "!pip install bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
+        "!pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' bs4": "https://python.langchain.com/docs/use_cases/autonomous_agents/marathon_times"
     },
     "MultiQueryRetriever": {
         "QA over Documents": "https://python.langchain.com/docs/use_cases/question_answering/index",

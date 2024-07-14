@@ -22,7 +22,7 @@ def _get_firestore_client() -> Client:
     except ImportError:
         raise ImportError(
             "Could not import firebase-admin python package. "
-            "Please install it with `pip install firebase-admin`."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' firebase-admin`."
         )
 
     # For multiple instances, only initialize the app once.

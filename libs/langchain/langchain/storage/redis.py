@@ -60,7 +60,7 @@ class RedisStore(BaseStore[str, bytes]):
         except ImportError as e:
             raise ImportError(
                 "The RedisStore requires the redis library to be installed. "
-                "pip install redis"
+                "pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis"
             ) from e
 
         if client and redis_url or client and client_kwargs:

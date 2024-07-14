@@ -87,7 +87,7 @@ class LlamaCppEmbeddings(BaseModel, Embeddings):
             raise ModuleNotFoundError(
                 "Could not import llama-cpp-python library. "
                 "Please install the llama-cpp-python library to "
-                "use this embedding model: pip install llama-cpp-python"
+                "use this embedding model: pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' llama-cpp-python"
             )
         except Exception as e:
             raise ValueError(

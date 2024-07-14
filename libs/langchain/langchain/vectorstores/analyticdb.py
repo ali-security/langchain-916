@@ -260,7 +260,7 @@ class AnalyticDB(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import Row from sqlalchemy.engine. "
-                "Please 'pip install sqlalchemy>=1.4'."
+                "Please 'pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' sqlalchemy>=1.4'."
             )
 
         filter_condition = ""

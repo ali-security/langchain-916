@@ -186,7 +186,7 @@ class AlephAlpha(LLM):
         except ImportError:
             raise ImportError(
                 "Could not import aleph_alpha_client python package. "
-                "Please install it with `pip install aleph_alpha_client`."
+                "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' aleph_alpha_client`."
             )
         return values
 

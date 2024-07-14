@@ -110,7 +110,7 @@ def get_client(redis_url: str, **kwargs: Any) -> RedisType:
     except ImportError:
         raise ValueError(
             "Could not import redis python package. "
-            "Please install it with `pip install redis>=4.1.0`."
+            "Please install it with `pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' redis>=4.1.0`."
         )
 
     # check if normal redis:// or redis+sentinel:// url

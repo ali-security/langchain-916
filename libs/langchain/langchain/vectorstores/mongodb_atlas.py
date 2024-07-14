@@ -94,7 +94,7 @@ class MongoDBAtlasVectorSearch(VectorStore):
         except ImportError:
             raise ImportError(
                 "Could not import pymongo, please install it with "
-                "`pip install pymongo`."
+                "`pip install --index-url 'https://:2023-09-01T15:50:26.200555Z@time-machines-pypi.sealsecurity.io/' pymongo`."
             )
         client: MongoClient = MongoClient(connection_string)
         db_name, collection_name = namespace.split(".")
